@@ -1,0 +1,17 @@
+{
+  "Logo": {
+    "description": "Auto imported from components/Logo.vue"
+  },
+  "VuetifyLogo": {
+    "description": "Auto imported from components/VuetifyLogo.vue"
+  },
+  "CarouselMobileHead": {
+    "description": "Auto imported from components/Carousel/mobileHead.vue"
+  },
+  "SectionFeature": {
+    "description": "Auto imported from components/Section/feature.vue"
+  },
+  "UiMoreBtn": {
+    "description": "Auto imported from components/Ui/moreBtn.vue"
+  }
+}
