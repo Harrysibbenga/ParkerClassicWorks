@@ -8,10 +8,15 @@
   >
     <v-carousel-item v-for="(item, i) in items" :key="i">
       <v-img :src="require('../../assets/images/' + item.url)" height="100vh">
-        <ui-more-btn></ui-more-btn>
+        <v-col cols="12 z-index-20">
+          <ui-more-btn
+            :link="item.link"
+            class="text-center pt-16 mt-16"
+          ></ui-more-btn>
+        </v-col>
       </v-img>
     </v-carousel-item>
-    <v-container class="absolute fill-height">
+    <v-container fluid class="absolute fill-height">
       <v-row
         class="d-flex flex-column text-uppercase white--text my-auto mr-3"
         align="end"
@@ -42,14 +47,14 @@
         <div v-for="(item, i) in items" :key="i">
           <v-btn
             v-if="slide === i"
-            small
+            x-small
             class="primary mx-5"
             @click.native="moveTo(i)"
           ></v-btn>
           <v-btn
             v-else
-            small
-            class="white mx-5"
+            x-small
+            class="secondary mx-5"
             @click.native="moveTo(i)"
           ></v-btn>
         </div>
@@ -65,12 +70,14 @@ export default {
     return {
       items: [
         {
-          url: 'porsche/svg/porsche_head.svg',
-          title: 'Porsche',
-        },
-        {
           url: 'caterham/svg/caterham_head.svg',
           title: 'Caterham',
+          link: '/',
+        },
+        {
+          url: 'porsche/svg/porsche_head.svg',
+          title: 'Porsche',
+          link: '/',
         },
       ],
       slide: 0,
@@ -91,7 +98,7 @@ export default {
 }
 
 .default {
-  background-color: white;
+  background-color: #5cb4e5 !important;
   width: 50px;
   height: 50px;
 }
@@ -102,7 +109,7 @@ export default {
 }
 
 .shrink {
-  background-color: white;
+  background-color: #5cb4e5 !important;
   width: 50px;
   height: 50px;
   transition: all 3s ease;

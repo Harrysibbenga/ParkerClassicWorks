@@ -5,17 +5,22 @@
         <p class="display-1 mb-0">Feature:</p>
         <h2 class="display-1 font-weight-bold">The perfect getaway</h2>
       </v-col>
+      <v-col cols="12">
+        <ui-more-btn :link="feature.link"></ui-more-btn>
+      </v-col>
     </v-row>
-    <ui-more-btn></ui-more-btn>
   </v-img>
 </template>
 
 <script>
+import { responsive } from '@/mixins/responsive'
 export default {
+  mixins: [responsive],
   data() {
     return {
       feature: {
         url: 'svg/feature.svg',
+        link: '/',
       },
     }
   },
