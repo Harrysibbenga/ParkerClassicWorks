@@ -3,12 +3,17 @@
     <v-col
       v-for="(item, i) in items"
       :key="i"
-      cols="6"
+      name="expand"
+      mode="out-in"
+      :class="{
+        growCont: side === i,
+        shrinkCont: side !== i,
+      }"
       @mouseenter="active(i)"
       @mouseleave="active(null)"
     >
       <nuxt-link :to="item.link" class="">
-        <v-img :src="require('../../assets/images/' + item.url)" :height="700">
+        <v-img :src="require('../../assets/images/' + item.url)" height="100vh">
           <div
             class="px-2"
             :class="{
@@ -19,7 +24,7 @@
               shrink: side !== i,
             }"
           >
-            <h2 v-if="side === i" class="text-h5 white--text">
+            <h2 v-if="side === i" class="text-h4 white--text text-uppercase">
               {{ item.title }}
             </h2>
             <h2 v-else class="text-h5"></h2>
@@ -38,12 +43,12 @@ export default {
       side: null,
       items: [
         {
-          url: 'caterham/svg/caterham_head.svg',
+          url: 'caterham/MALC4695.jpg',
           title: 'Caterham',
           link: '/',
         },
         {
-          url: 'porsche/svg/porsche_head.svg',
+          url: 'porsche/IMG_3569.jpg',
           title: 'Porsche',
           link: '/',
         },
@@ -57,37 +62,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss">
-.default-right,
-.default-left {
-  background-color: #5cb4e5 !important;
-  width: 50px;
-  height: 50px;
-  position: absolute;
-}
-.default-left {
-  left: 0;
-  bottom: 20%;
-  margin-left: 50px;
-  text-align: right;
-}
-
-.default-right {
-  right: 0;
-  top: 20%;
-  margin-right: 50px;
-}
-
-.grow {
-  transition: all 3s ease;
-  width: 180px;
-}
-
-.shrink {
-  background-color: #5cb4e5 !important;
-  width: 50px;
-  height: 50px;
-  transition: all 3s ease;
-}
-</style>

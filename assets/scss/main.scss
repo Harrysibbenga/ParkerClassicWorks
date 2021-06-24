@@ -29,3 +29,59 @@
 .z-index-20 {
   z-index: 20 !important;
 }
+
+// transition classes
+.default-right,
+.default-left {
+  background-color: #5cb4e5 !important;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+
+.default-left {
+  left: 0;
+  bottom: 20%;
+  margin-left: 50px;
+  text-align: right;
+}
+
+.default-right {
+  right: 0;
+  top: 20%;
+  margin-right: 50px;
+}
+
+.expand-enter-active,
+.expand-leave-active {
+  transition: all 3s ease;
+}
+
+.default {
+  background-color: #5cb4e5 !important;
+  width: 50px;
+  height: 50px;
+}
+
+.grow {
+  transition: all 3s ease;
+  max-width: fit-content !important;
+  width: 210px !important;
+}
+
+.growCont {
+  transition: all 3.2s ease;
+  min-width: 80% !important;
+}
+
+.shrinkCont {
+  transition: all 3.2s ease;
+  min-width: 20% !important
+}
+
+.shrink {
+  background-color: #5cb4e5 !important;
+  width: 50px;
+  height: 50px;
+  transition: all 3s ease;
+}

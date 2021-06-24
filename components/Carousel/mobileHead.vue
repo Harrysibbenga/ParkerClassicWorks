@@ -10,7 +10,7 @@
       <v-img :src="require('../../assets/images/' + item.url)" height="100vh">
         <v-col cols="12 z-index-20">
           <ui-more-btn
-            :link="item.link"
+            :link="{ name: 'service-type', params: { type: item.type } }"
             class="text-center pt-16 mt-16"
           ></ui-more-btn>
         </v-col>
@@ -36,7 +36,7 @@
               shrink: slide !== i,
             }"
           >
-            <h2 v-if="slide === i" class="text-h5">
+            <h2 v-if="slide === i" class="text-h4 white--text text-uppercase">
               {{ item.title }}
             </h2>
             <h2 v-else class="text-h5"></h2>
@@ -70,14 +70,14 @@ export default {
     return {
       items: [
         {
-          url: 'caterham/svg/caterham_head.svg',
+          url: 'caterham/MALC4695.jpg',
           title: 'Caterham',
-          link: '/',
+          type: 'caterham',
         },
         {
-          url: 'porsche/svg/porsche_head.svg',
+          url: 'porsche/IMG_3569.jpg',
           title: 'Porsche',
-          link: '/',
+          type: 'porsche',
         },
       ],
       slide: 0,
@@ -90,28 +90,3 @@ export default {
   },
 }
 </script>
-
-<style>
-.expand-enter-active,
-.expand-leave-active {
-  transition: all 3s ease;
-}
-
-.default {
-  background-color: #5cb4e5 !important;
-  width: 50px;
-  height: 50px;
-}
-
-.grow {
-  transition: all 3s ease;
-  width: 180px;
-}
-
-.shrink {
-  background-color: #5cb4e5 !important;
-  width: 50px;
-  height: 50px;
-  transition: all 3s ease;
-}
-</style>

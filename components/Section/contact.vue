@@ -146,8 +146,12 @@ export default {
   data: () => ({
     name: '',
     phone: '',
-    address: '',
+    street_address_1: '',
+    street_address_2: '',
+    county: '',
+    postcode: '',
     email: '',
+    city: '',
     subject: '',
     message: '',
     msg: {
@@ -245,7 +249,11 @@ export default {
       this.phone = ''
       this.email = ''
       this.subject = ''
-      this.address = ''
+      this.street_address_1 = ''
+      this.street_address_2 = ''
+      this.county = ''
+      this.city = ''
+      this.postcode = ''
       this.message = ''
       this.msg = {
         type: '',

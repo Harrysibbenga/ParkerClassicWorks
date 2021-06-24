@@ -1,5 +1,12 @@
 [
   {
+    "name": "test",
+    "path": "/test",
+    "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/test.vue",
+    "chunkName": "pages/test",
+    "_name": "_e1bb0c32"
+  },
+  {
     "name": "service-type",
     "path": "/service/:type?",
     "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/service/_type.vue",

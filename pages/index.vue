@@ -10,6 +10,7 @@
     <v-col cols="12">
       <carousel-about></carousel-about>
     </v-col>
+    <service-booking></service-booking>
   </v-row>
 </template>
 

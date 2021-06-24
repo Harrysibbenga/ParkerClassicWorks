@@ -16,6 +16,8 @@ let store = {};
   store.modules = store.modules || {}
 
   resolveStoreModules(require('../store/users/index.js'), 'users/index.js')
+  resolveStoreModules(require('../store/service/index.js'), 'service/index.js')
+  resolveStoreModules(require('../store/posts/index.js'), 'posts/index.js')
 
   // If the environment supports hot reloading...
 })()

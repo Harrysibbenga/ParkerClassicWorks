@@ -200,7 +200,7 @@ export async function setContext (app, context) {
       payload: context.payload,
       error: context.error,
       base: app.router.options.base,
-      env: {}
+      env: {"DVLA_REG_LOOKUP_API_KEY":"IRrH9VhM8Da1Efdy7IEhwapHw2lGhVqm2EmsHDuf"}
     }
     // Only set once
 

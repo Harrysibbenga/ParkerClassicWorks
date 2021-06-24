@@ -2,16 +2,46 @@
   "Logo": {
     "description": "Auto imported from components/Logo.vue"
   },
-  "VuetifyLogo": {
-    "description": "Auto imported from components/VuetifyLogo.vue"
+  "CarouselAbout": {
+    "description": "Auto imported from components/Carousel/about.vue"
+  },
+  "CarouselLaptopHead": {
+    "description": "Auto imported from components/Carousel/laptopHead.vue"
   },
   "CarouselMobileHead": {
     "description": "Auto imported from components/Carousel/mobileHead.vue"
   },
-  "SectionFeature": {
-    "description": "Auto imported from components/Section/feature.vue"
+  "AppFoot": {
+    "description": "Auto imported from components/App/foot.vue"
+  },
+  "AppHead": {
+    "description": "Auto imported from components/App/head.vue"
   },
   "UiMoreBtn": {
     "description": "Auto imported from components/Ui/moreBtn.vue"
+  },
+  "SectionContact": {
+    "description": "Auto imported from components/Section/contact.vue"
+  },
+  "SectionFeature": {
+    "description": "Auto imported from components/Section/feature.vue"
+  },
+  "SectionMap": {
+    "description": "Auto imported from components/Section/map.vue"
+  },
+  "SectionPartners": {
+    "description": "Auto imported from components/Section/partners.vue"
+  },
+  "ServiceBooking": {
+    "description": "Auto imported from components/Service/booking.vue"
+  },
+  "ServiceHead": {
+    "description": "Auto imported from components/Service/head.vue"
+  },
+  "ServiceMid": {
+    "description": "Auto imported from components/Service/mid.vue"
+  },
+  "ServiceRegCheck": {
+    "description": "Auto imported from components/Service/regCheck.vue"
   }
 }
