@@ -63,21 +63,6 @@
         <UiEditor :content.sync="postContent.content"></UiEditor>
       </v-col>
     </v-row>
-
-    <!-- <v-row v-if="content.type == 'partner'">
-      <v-col cols="12">
-        <v-text-field
-          v-model.trim="postContent.track"
-          label="Track"
-        ></v-text-field>
-      </v-col>
-      <v-col cols="12">
-        <v-text-field
-          v-model.trim="postContent.length"
-          label="Length"
-        ></v-text-field>
-      </v-col>
-    </v-row> -->
   </div>
 </template>
 

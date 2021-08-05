@@ -8,6 +8,8 @@
         <PostStandardForm :content.sync="post.content" />
         <PostQuotes :quotes.sync="post.quotes" />
         <PostGallery :gallery.sync="post.gallery" />
+        <p class="mt-16">Image captions</p>
+        <ui-editor :content.sync="post.imgDesc"></ui-editor>
         <ui-message :msg="msg" />
         <v-btn class="mt-5" color="primary" @click.native="submitForm"
           >Add Post</v-btn
@@ -37,6 +39,7 @@ export default {
           url: '',
           alt: '',
         },
+        imgDesc: '',
         gallery: [],
         content: {
           type: 'article',
@@ -115,6 +118,7 @@ export default {
           imgId: this.post.image.id,
           url: this.post.image.url,
           alt: this.post.image.alt,
+          imgDesc: this.post.imgDesc,
           type: this.post.content.type,
           gallery: this.post.gallery,
         })

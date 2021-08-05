@@ -11,6 +11,8 @@
         <PostStandardForm class="mt-5" :content.sync="post.content" />
         <PostQuotes :quotes.sync="post.quotes" />
         <PostGallery :gallery="post.gallery" />
+        <p class="mt-16">Image captions</p>
+        <ui-editor :content.sync="post.imgDesc" />
       </v-card-text>
       <v-card-actions class="mt-10">
         <v-btn color="error" @click.native="cancelEdit">Close</v-btn>

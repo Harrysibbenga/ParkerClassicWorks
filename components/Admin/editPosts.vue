@@ -61,6 +61,7 @@ export default {
           slug: this.emitedPost.slug,
           year: this.emitedPost.year,
           id: this.emitedPost.id,
+          imgDesc: this.emitedPost.imgDesc,
         }
         return clickedPost
       },
@@ -149,6 +150,7 @@ export default {
             imgId: this.clickedPost.image.id,
             url: this.clickedPost.image.url,
             alt: this.clickedPost.image.alt,
+            imgDesc: this.clickedPost.imgDesc,
             type: this.clickedPost.content.type,
             gallery: this.clickedPost.gallery,
           })

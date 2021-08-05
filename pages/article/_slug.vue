@@ -1,82 +1,78 @@
 <template>
-  <div>
-    <v-container fluid>
-      <v-row>
-        <v-col col="12" class="p-0 text-center">
-          <v-card class="secondary">
-            <v-img :src="post.url" :alt="post.alt">
-              <v-row class="d-none d-md-block">
-                <v-col cols="12">
-                  <v-card-text>
-                    <p class="text-h2 font-weight-light">News:</p>
-                    <h1
-                      class="text-h3 secondary primary--text font-weight-medium"
-                    >
-                      {{ post.title }}
-                    </h1>
-                  </v-card-text>
-                </v-col>
-              </v-row>
-            </v-img>
-            <v-card-text class="d-md-none">
-              <p class="text-h5 text-sm-h4 font-weight-light">News:</p>
-              <h1
-                class="
-                  text-h5 text-sm-h4
-                  secondary
-                  primary--text
-                  font-weight-medium
-                "
-              >
-                {{ post.title }}
-              </h1>
-            </v-card-text>
-          </v-card>
-        </v-col>
-      </v-row>
-      <v-row class="px-5">
-        <v-col col="12" class="pt-2 white--text">
-          <div class="py-5 text-justify" v-html="post.content"></div>
-        </v-col>
-      </v-row>
-    </v-container>
+  <v-row no-gutters>
+    <v-col cols="12">
+      <v-card class="secondary">
+        <v-img :src="post.url" :alt="post.alt" max-height="90vh">
+          <v-row class="d-none d-md-block fill-height">
+            <v-col cols="12" class="d-flex align-end fill-height">
+              <v-card-text>
+                <p class="text-h2 white--text font-weight-light">News:</p>
+                <h1 class="text-h3 white--text font-weight-medium">
+                  {{ post.title }}
+                </h1>
+              </v-card-text>
+            </v-col>
+          </v-row>
+        </v-img>
+        <v-card-text class="d-md-none">
+          <p class="text-h5 text-sm-h4 font-weight-light">News:</p>
+          <h1
+            class="
+              text-h5 text-sm-h4
+              secondary
+              primary--text
+              font-weight-medium
+            "
+          >
+            {{ post.title }}
+          </h1>
+        </v-card-text>
+      </v-card>
+    </v-col>
 
-    <v-container>
-      <v-row class="m-0">
-        <v-col
-          v-for="(src, index) in post.gallery"
-          :key="index"
-          cols="6"
-          md="4"
-          @click="() => showImg(index)"
-        >
-          <v-img :src="src.url" :alt="src.alt"></v-img>
-        </v-col>
-        <client-only>
-          <vue-easy-lightbox
-            :visible="visible"
-            :imgs="images"
-            :index="imgIndex"
-            @hide="handleHide"
-          ></vue-easy-lightbox>
-        </client-only>
-      </v-row>
-    </v-container>
+    <v-col cols="12" class="pt-10">
+      <v-container>
+        <div class="py-5 text-justify" v-html="post.content"></div>
+      </v-container>
+    </v-col>
 
-    <v-container>
-      <v-row class="px-5">
-        <v-col
-          v-for="(content, index) in post.quotes"
-          :key="index"
-          cols="12"
-          class="secondary--text"
-        >
-          <h2>{{ content.name }}</h2>
-          <div class="py-5 text-justify" v-html="content.content"></div>
-        </v-col>
-      </v-row>
-    </v-container>
-  </div>
+    <v-col cols="12">
+      <v-container>
+        <v-row>
+          <v-col
+            v-for="(src, index) in post.gallery"
+            :key="index"
+            cols="6"
+            md="4"
+            @click="() => showImg(index)"
+          >
+            <v-img :src="src.url" :alt="src.alt"></v-img>
+          </v-col>
+          <v-col cols="12" class="text-center" v-html="post.imgDesc"></v-col>
+          <client-only>
+            <vue-easy-lightbox
+              :visible="visible"
+              :imgs="images"
+              :index="imgIndex"
+              @hide="handleHide"
+            ></vue-easy-lightbox>
+          </client-only>
+        </v-row>
+      </v-container>
+    </v-col>
+
+    <v-col
+      v-for="(content, index) in post.quotes"
+      :key="index"
+      cols="12"
+      class="py-15"
+    >
+      <v-container>
+        <h2>{{ content.name }}</h2>
+        <div class="py-5 text-justify" v-html="content.content"></div>
+      </v-container>
+    </v-col>
+  </v-row>
 </template>
 
 <script>
