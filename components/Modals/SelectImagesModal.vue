@@ -121,7 +121,7 @@ export default {
   },
   computed: {
     items() {
-      return this.$store.getters['images/imageImages']
+      return this.$store.getters['images/images']
     },
   },
   methods: {

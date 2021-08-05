@@ -14,15 +14,6 @@
   "AppHead": {
     "description": "Auto imported from components/App/head.vue"
   },
-  "CarouselAbout": {
-    "description": "Auto imported from components/Carousel/about.vue"
-  },
-  "CarouselLaptopHead": {
-    "description": "Auto imported from components/Carousel/laptopHead.vue"
-  },
-  "CarouselMobileHead": {
-    "description": "Auto imported from components/Carousel/mobileHead.vue"
-  },
   "DetailHead": {
     "description": "Auto imported from components/Detail/head.vue"
   },
@@ -31,6 +22,15 @@
   },
   "DetailSteps": {
     "description": "Auto imported from components/Detail/steps.vue"
+  },
+  "CarouselAbout": {
+    "description": "Auto imported from components/Carousel/about.vue"
+  },
+  "CarouselLaptopHead": {
+    "description": "Auto imported from components/Carousel/laptopHead.vue"
+  },
+  "CarouselMobileHead": {
+    "description": "Auto imported from components/Carousel/mobileHead.vue"
   },
   "ModalsDeleteModal": {
     "description": "Auto imported from components/Modals/DeleteModal.vue"
@@ -70,6 +70,9 @@
   },
   "PostStandardForm": {
     "description": "Auto imported from components/Post/StandardForm.vue"
+  },
+  "SectionAffiliates": {
+    "description": "Auto imported from components/Section/affiliates.vue"
   },
   "SectionContact": {
     "description": "Auto imported from components/Section/contact.vue"

@@ -23,7 +23,7 @@ module.exports = {
   // plugins: ['~/plugins/axios.js'],
 
   router: {
-    middeware: 'auth',
+    middleware: ['auth'],
   },
 
   // Auto import components: https://go.nuxtjs.dev/config-components

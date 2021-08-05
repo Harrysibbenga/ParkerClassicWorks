@@ -5,12 +5,12 @@ export { default as AdminAddPost } from '../../components/Admin/addPost.vue'
 export { default as AdminEditPosts } from '../../components/Admin/editPosts.vue'
 export { default as AppFoot } from '../../components/App/foot.vue'
 export { default as AppHead } from '../../components/App/head.vue'
-export { default as CarouselAbout } from '../../components/Carousel/about.vue'
-export { default as CarouselLaptopHead } from '../../components/Carousel/laptopHead.vue'
-export { default as CarouselMobileHead } from '../../components/Carousel/mobileHead.vue'
 export { default as DetailHead } from '../../components/Detail/head.vue'
 export { default as DetailMid } from '../../components/Detail/mid.vue'
 export { default as DetailSteps } from '../../components/Detail/steps.vue'
+export { default as CarouselAbout } from '../../components/Carousel/about.vue'
+export { default as CarouselLaptopHead } from '../../components/Carousel/laptopHead.vue'
+export { default as CarouselMobileHead } from '../../components/Carousel/mobileHead.vue'
 export { default as ModalsDeleteModal } from '../../components/Modals/DeleteModal.vue'
 export { default as ModalsEditModal } from '../../components/Modals/EditModal.vue'
 export { default as ModalsExistsModal } from '../../components/Modals/ExistsModal.vue'
@@ -24,6 +24,7 @@ export { default as PostGallery } from '../../components/Post/Gallery.vue'
 export { default as PostImageUpload } from '../../components/Post/ImageUpload.vue'
 export { default as PostQuotes } from '../../components/Post/Quotes.vue'
 export { default as PostStandardForm } from '../../components/Post/StandardForm.vue'
+export { default as SectionAffiliates } from '../../components/Section/affiliates.vue'
 export { default as SectionContact } from '../../components/Section/contact.vue'
 export { default as SectionFeature } from '../../components/Section/feature.vue'
 export { default as SectionInsta } from '../../components/Section/insta.vue'
@@ -45,12 +46,12 @@ export const LazyAdminAddPost = import('../../components/Admin/addPost.vue' /* w
 export const LazyAdminEditPosts = import('../../components/Admin/editPosts.vue' /* webpackChunkName: "components/admin-edit-posts" */).then(c => wrapFunctional(c.default || c))
 export const LazyAppFoot = import('../../components/App/foot.vue' /* webpackChunkName: "components/app-foot" */).then(c => wrapFunctional(c.default || c))
 export const LazyAppHead = import('../../components/App/head.vue' /* webpackChunkName: "components/app-head" */).then(c => wrapFunctional(c.default || c))
-export const LazyCarouselAbout = import('../../components/Carousel/about.vue' /* webpackChunkName: "components/carousel-about" */).then(c => wrapFunctional(c.default || c))
-export const LazyCarouselLaptopHead = import('../../components/Carousel/laptopHead.vue' /* webpackChunkName: "components/carousel-laptop-head" */).then(c => wrapFunctional(c.default || c))
-export const LazyCarouselMobileHead = import('../../components/Carousel/mobileHead.vue' /* webpackChunkName: "components/carousel-mobile-head" */).then(c => wrapFunctional(c.default || c))
 export const LazyDetailHead = import('../../components/Detail/head.vue' /* webpackChunkName: "components/detail-head" */).then(c => wrapFunctional(c.default || c))
 export const LazyDetailMid = import('../../components/Detail/mid.vue' /* webpackChunkName: "components/detail-mid" */).then(c => wrapFunctional(c.default || c))
 export const LazyDetailSteps = import('../../components/Detail/steps.vue' /* webpackChunkName: "components/detail-steps" */).then(c => wrapFunctional(c.default || c))
+export const LazyCarouselAbout = import('../../components/Carousel/about.vue' /* webpackChunkName: "components/carousel-about" */).then(c => wrapFunctional(c.default || c))
+export const LazyCarouselLaptopHead = import('../../components/Carousel/laptopHead.vue' /* webpackChunkName: "components/carousel-laptop-head" */).then(c => wrapFunctional(c.default || c))
+export const LazyCarouselMobileHead = import('../../components/Carousel/mobileHead.vue' /* webpackChunkName: "components/carousel-mobile-head" */).then(c => wrapFunctional(c.default || c))
 export const LazyModalsDeleteModal = import('../../components/Modals/DeleteModal.vue' /* webpackChunkName: "components/modals-delete-modal" */).then(c => wrapFunctional(c.default || c))
 export const LazyModalsEditModal = import('../../components/Modals/EditModal.vue' /* webpackChunkName: "components/modals-edit-modal" */).then(c => wrapFunctional(c.default || c))
 export const LazyModalsExistsModal = import('../../components/Modals/ExistsModal.vue' /* webpackChunkName: "components/modals-exists-modal" */).then(c => wrapFunctional(c.default || c))
@@ -64,6 +65,7 @@ export const LazyPostGallery = import('../../components/Post/Gallery.vue' /* web
 export const LazyPostImageUpload = import('../../components/Post/ImageUpload.vue' /* webpackChunkName: "components/post-image-upload" */).then(c => wrapFunctional(c.default || c))
 export const LazyPostQuotes = import('../../components/Post/Quotes.vue' /* webpackChunkName: "components/post-quotes" */).then(c => wrapFunctional(c.default || c))
 export const LazyPostStandardForm = import('../../components/Post/StandardForm.vue' /* webpackChunkName: "components/post-standard-form" */).then(c => wrapFunctional(c.default || c))
+export const LazySectionAffiliates = import('../../components/Section/affiliates.vue' /* webpackChunkName: "components/section-affiliates" */).then(c => wrapFunctional(c.default || c))
 export const LazySectionContact = import('../../components/Section/contact.vue' /* webpackChunkName: "components/section-contact" */).then(c => wrapFunctional(c.default || c))
 export const LazySectionFeature = import('../../components/Section/feature.vue' /* webpackChunkName: "components/section-feature" */).then(c => wrapFunctional(c.default || c))
 export const LazySectionInsta = import('../../components/Section/insta.vue' /* webpackChunkName: "components/section-insta" */).then(c => wrapFunctional(c.default || c))

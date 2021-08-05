@@ -1,55 +1,26 @@
 <template>
   <div>
     <!-- article post type  -->
-    <v-container v-if="post.content.type == 'article'">
+    <v-container>
       <h1 class="font-weight-bold text-center pb-2">Add News Item</h1>
       <div class="pt-2">
         <PostImageUpload :image.sync="post.image" />
         <PostStandardForm :content.sync="post.content" />
         <PostQuotes :quotes.sync="post.quotes" />
         <PostGallery :gallery.sync="post.gallery" />
-        <UiMessage :msg="msg" />
+        <ui-message :msg="msg" />
         <v-btn class="mt-5" color="primary" @click.native="submitForm"
           >Add Post</v-btn
         >
       </div>
     </v-container>
-    <!-- service post type  -->
-    <v-container v-if="post.content.type == 'service'">
-      <h1 class="font-weight-bold text-center pb-2">Add New Service</h1>
-
-      <v-row class="pt-2">
-        <v-col cols="12">
-          <h2>Images</h2>
-          <v-row>
-            <v-col cols="6">
-              <PostImageUpload :image.sync="post.image" />
-            </v-col>
-            <v-col cols="6">
-              <PostImageUpload :image.sync="post.subimage" />
-            </v-col>
-          </v-row>
-        </v-col>
-        <v-col cols="12">
-          <PostStandardForm :content.sync="post.content" />
-          <UiMessage :msg="msg" />
-          <v-btn class="mt-5" color="primary" @click.native="submitForm"
-            >Add Service</v-btn
-          >
-        </v-col>
-      </v-row>
-    </v-container>
   </div>
 </template>
 
 <script>
+import { postsCol } from '@/services/firebase'
+
 export default {
-  props: {
-    postData: {
-      type: Object,
-      default: () => {},
-    },
-  },
   data() {
     return {
       defaultImg: {
@@ -60,17 +31,30 @@ export default {
         type: '',
         message: '',
       },
+      post: {
+        image: {
+          id: '',
+          url: '',
+          alt: '',
+        },
+        gallery: [],
+        content: {
+          type: 'article',
+          title: '',
+          content: '',
+          excerpt: '',
+          date: '',
+        },
+        quotes: [
+          {
+            name: '',
+            content: '',
+          },
+        ],
+        slug: '',
+        year: '',
+      },
     }
-  },
-  computed: {
-    post: {
-      get() {
-        return this.postData
-      },
-      set(newValue) {
-        this.$emit('update:postData', newValue)
-      },
-    },
   },
   methods: {
     reset() {
@@ -84,7 +68,6 @@ export default {
         content: {
           type: 'post',
           title: '',
-          track: '',
           content: '',
           excerpt: '',
           date: '',
@@ -98,8 +81,6 @@ export default {
         slug: '',
         year: '',
       }
-      this.confirmEdit = false
-      this.confirmDelete = false
     },
     addPost() {
       let slugArry = []
@@ -129,7 +110,6 @@ export default {
           date: this.post.content.date,
           content: this.post.content.content,
           quotes: this.post.quotes,
-          track: this.post.content.track,
           year: this.post.year,
           createdOn: new Date(),
           imgId: this.post.image.id,
@@ -167,7 +147,7 @@ export default {
     submitForm() {
       if (this.post.content.date === '' || this.post.content.title === '') {
         this.msg = {
-          type: 'Warning',
+          type: 'warning',
           message:
             'Missing information please make sure the post information is filled',
         }
@@ -179,104 +159,6 @@ export default {
         }, 2000)
       } else {
         this.addPost()
-      }
-    },
-    deleteConfirm(confirm) {
-      if (confirm) {
-        postsCol
-          .doc(this.clickedPost.id)
-          .delete()
-          .then(() => {
-            this.deleteModal = false
-            this.msg = {
-              type: 'danger',
-              message: 'Post deleted',
-            }
-            setTimeout(() => {
-              this.msg = {
-                type: '',
-                message: '',
-              }
-            }, 2000)
-          })
-          .catch((error) => {
-            this.msg = {
-              type: 'warning',
-              message: error.message,
-            }
-            setTimeout(() => {
-              this.msg = {
-                type: '',
-                message: '',
-              }
-            }, 2000)
-          })
-      }
-    },
-    editConfirm(confirm) {
-      if (confirm) {
-        let slugArry = []
-        const newSlug = []
-        let date = ''
-        // create slug
-        slugArry = this.clickedPost.content.title.split(' ')
-        date = this.clickedPost.content.date
-        this.clickedPost.year = date.split('-')[0]
-
-        slugArry.forEach((item) => {
-          newSlug.push(item.toLowerCase())
-        })
-
-        this.clickedPost.slug = newSlug.join('-') + '-' + date
-
-        if (this.clickedPost.image.url === '') {
-          this.clickedPost.image.url = this.defaultImg.url
-          this.clickedPost.image.alt = this.defaultImg.alt
-        }
-
-        postsCol
-          .doc(this.clickedPost.id)
-          .update({
-            title: this.clickedPost.content.title,
-            excerpt: this.clickedPost.content.excerpt,
-            slug: this.clickedPost.slug,
-            date: this.clickedPost.content.date,
-            content: this.clickedPost.content.content,
-            quotes: this.clickedPost.quotes,
-            track: this.clickedPost.content.track,
-            year: this.clickedPost.year,
-            lastUpdateOn: new Date(),
-            imgId: this.clickedPost.image.id,
-            url: this.clickedPost.image.url,
-            alt: this.clickedPost.image.alt,
-            type: this.clickedPost.content.type,
-            gallery: this.clickedPost.gallery,
-          })
-          .then(() => {
-            this.reset()
-            this.msg = {
-              type: 'success',
-              message: 'Post updated',
-            }
-            setTimeout(() => {
-              this.msg = {
-                type: '',
-                message: '',
-              }
-            }, 2000)
-          })
-          .catch((err) => {
-            this.msg = {
-              type: 'warning',
-              message: err.message,
-            }
-            setTimeout(() => {
-              this.msg = {
-                type: '',
-                message: '',
-              }
-            }, 2000)
-          })
       }
     },
   },

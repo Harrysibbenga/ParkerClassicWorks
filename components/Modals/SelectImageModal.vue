@@ -29,13 +29,17 @@
               <v-col
                 v-for="(itm, index) in paginatedData"
                 :key="index"
-                class="p-0"
                 cols="3"
               >
                 <div
                   class="custom-control custom-radio custom-control text-center"
                 >
-                  <img :src="itm.url" :alt="itm.alt" class="img-fluid" />
+                  <img
+                    :src="itm.url"
+                    :alt="itm.alt"
+                    width="100%"
+                    height="100%"
+                  />
                   <input
                     :id="itm.id"
                     v-model="selected"
