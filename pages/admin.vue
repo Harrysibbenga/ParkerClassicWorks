@@ -13,7 +13,7 @@
 
       <v-tabs center-active color="primary" class="mt-4 mx-4">
         <v-tab :nuxt="true" to="/admin">Home</v-tab>
-        <v-tab :nuxt="true" to="/admin/services"> Services </v-tab>
+        <!-- <v-tab :nuxt="true" to="/admin/services"> Services </v-tab> -->
         <v-tab :nuxt="true" to="/admin/articles"> Articles </v-tab>
       </v-tabs>
     </v-container>

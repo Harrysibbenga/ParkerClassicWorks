@@ -3,7 +3,7 @@
     <v-col
       v-for="(item, i) in items"
       :key="i"
-      class="d-flex align-center justify-center"
+      class="d-flex align-center justify-center py-5"
     >
       <a :href="item.url" target="_blank">
         <img
