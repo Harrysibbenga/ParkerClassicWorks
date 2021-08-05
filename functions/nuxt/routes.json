@@ -1,5 +1,70 @@
 [
   {
+    "name": "admin",
+    "path": "/admin",
+    "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/admin.vue",
+    "chunkName": "pages/admin",
+    "children": [
+      {
+        "name": "admin-articles",
+        "path": "articles",
+        "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/admin/articles.vue",
+        "chunkName": "pages/admin/articles",
+        "_name": "_2b5e8edc"
+      },
+      {
+        "name": "admin-services",
+        "path": "services",
+        "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/admin/services.vue",
+        "chunkName": "pages/admin/services",
+        "_name": "_1746fe33"
+      }
+    ],
+    "_name": "_c11c5b6c"
+  },
+  {
+    "name": "articles",
+    "path": "/articles",
+    "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/articles.vue",
+    "chunkName": "pages/articles",
+    "_name": "_662bd8dc"
+  },
+  {
+    "name": "caterham",
+    "path": "/caterham",
+    "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/caterham.vue",
+    "chunkName": "pages/caterham",
+    "_name": "_3906eff4"
+  },
+  {
+    "name": "detail",
+    "path": "/detail",
+    "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/detail.vue",
+    "chunkName": "pages/detail",
+    "_name": "_2abf4a34"
+  },
+  {
+    "name": "home",
+    "path": "/home",
+    "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/home.vue",
+    "chunkName": "pages/home",
+    "_name": "_92fb8898"
+  },
+  {
+    "name": "login",
+    "path": "/login",
+    "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/login.vue",
+    "chunkName": "pages/login",
+    "_name": "_37aa2164"
+  },
+  {
+    "name": "porsche",
+    "path": "/porsche",
+    "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/porsche.vue",
+    "chunkName": "pages/porsche",
+    "_name": "_5a08ac4a"
+  },
+  {
     "name": "test",
     "path": "/test",
     "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/test.vue",

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="596.597" height="256" viewBox="0 0 596.597 256">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1.02" y1="0.535" x2="0.237" y2="0.616" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="Path_535" x="0" y="37.405" width="596.597" height="218.095" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_22" data-name="Group 22" transform="translate(-712.903 -3108.5)">
+    <g transform="matrix(1, 0, 0, 1, 712.9, 3108.5)" filter="url(#Path_535)">
+      <path id="Path_535-2" data-name="Path 535" d="M-5671,3200l92.822,107.426L-5671,3400.1h-485.775V3200Z" transform="translate(6165.78 -3156.6)" fill="url(#linear-gradient)"/>
+    </g>
+    <text id="_2" data-name="2" transform="translate(805 3108.5)" fill="#fff" font-size="200" font-family="CoHeadline-Regular, Co Headline"><tspan x="1.6" y="206">2</tspan></text>
+    <text id="Service_requirements" data-name="Service
+requirements" transform="translate(947 3190)" fill="#fff" font-size="45" font-family="CoHeadline-Regular, Co Headline"><tspan x="0" y="46">Service</tspan><tspan x="0" y="96">requirements</tspan></text>
+  </g>
+</svg>
+

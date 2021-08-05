@@ -1,20 +1,34 @@
 <template>
   <v-container>
     <v-row>
-      <v-col cols="12" lg="8" class="secondary mx-auto">
+      <v-col cols="12" lg="8" class="offset-lg-2">
+        <h3 class="text-h3 pb-15 text-center white--text">{{ title }}</h3>
         <form @submit.prevent="submit">
           <v-row align="center">
             <v-col cols="12" md="6">
               <v-text-field
-                v-model="name"
-                :error-messages="nameErrors"
-                :counter="30"
-                name="name"
-                label="Name"
+                v-model="fname"
+                solo
+                :error-messages="fnameErrors"
+                name="fname"
+                label="First name"
                 color="white"
                 required
-                @input="$v.name.$touch()"
-                @blur="$v.name.$touch()"
+                @input="$v.fname.$touch()"
+                @blur="$v.fname.$touch()"
+              ></v-text-field>
+            </v-col>
+            <v-col cols="12" md="6">
+              <v-text-field
+                v-model="lname"
+                solo
+                :error-messages="lnameErrors"
+                name="lname"
+                label="Last name"
+                color="white"
+                required
+                @input="$v.lname.$touch()"
+                @blur="$v.lname.$touch()"
               ></v-text-field>
             </v-col>
             <v-col cols="12" md="6">
@@ -22,6 +36,7 @@
                 v-model="phone"
                 :error-messages="phoneErrors"
                 :counter="11"
+                solo
                 label="Phone number"
                 name="phone"
                 color="white"
@@ -30,66 +45,14 @@
                 @blur="$v.phone.$touch()"
               ></v-text-field>
             </v-col>
-            <label for="street_address_1" class="pl-3">Address</label>
-            <v-col cols="12">
-              <v-text-field
-                v-model="street_address_1"
-                name="street_address_1"
-                label="Street Address"
-                color="white"
-              ></v-text-field>
-            </v-col>
-            <v-col cols="12">
-              <v-text-field
-                v-model="street_address_2"
-                name="street_address_2"
-                label="Street Address Line 2"
-                color="white"
-              ></v-text-field>
-            </v-col>
             <v-col cols="12" md="6">
-              <v-text-field
-                v-model="city"
-                name="city"
-                label="City"
-                color="white"
-              ></v-text-field>
-            </v-col>
-            <v-col cols="12" md="6">
-              <v-text-field
-                v-model="county"
-                label="County"
-                name="county"
-                color="white"
-              ></v-text-field>
-            </v-col>
-            <v-col cols="12">
-              <v-text-field
-                v-model="postcode"
-                name="postcode"
-                label="Postode"
-                color="white"
-              ></v-text-field>
-            </v-col>
-            <v-col cols="12" md="6">
-              <v-text-field
-                v-model="subject"
-                :error-messages="subjectErrors"
-                label="Subject"
-                name="subject"
-                color="white"
-                required
-                @input="$v.subject.$touch()"
-                @blur="$v.subject.$touch()"
-              ></v-text-field>
-            </v-col>
-            <v-col cols="12">
               <v-text-field
                 v-model="email"
                 :error-messages="emailErrors"
                 label="Email"
                 name="email"
                 color="white"
+                solo
                 required
                 @input="$v.email.$touch()"
                 @blur="$v.email.$touch()"
@@ -101,6 +64,7 @@
                 name="message"
                 label="Message"
                 light
+                solo
                 :error-messages="messageErrors"
                 color="white"
                 clearable
@@ -110,10 +74,10 @@
               ></v-textarea>
             </v-col>
             <v-col cols="12" class="text-center">
-              <v-btn class="mr-4 white black--text" type="submit">
+              <v-btn class="mr-4 rounded-pill" :class="btnColor" type="submit">
                 submit
               </v-btn>
-              <v-btn class="mr-4 white black--text" @click.native="clear">
+              <v-btn class="mr-4 white rounded-pill" @click.native="clear">
                 clear
               </v-btn>
             </v-col>
@@ -136,23 +100,41 @@ export default {
   mixins: [validationMixin],
 
   validations: {
-    name: { required, maxLength: maxLength(30) },
-    phone: { required, maxLength: maxLength(15) },
+    fname: { required },
+    lname: { required },
+    phone: { required, maxLength: maxLength(11) },
     email: { required, email },
     message: { required },
-    subject: { required },
+  },
+
+  props: {
+    carDetails: {
+      type: Object,
+      default: () => ({}),
+    },
+    services: {
+      type: Array,
+      default: () => [],
+    },
+    subject: {
+      type: String,
+      default: 'General Enquiry',
+    },
+    title: {
+      type: String,
+      default: '',
+    },
+    btnColor: {
+      type: String,
+      default: 'white',
+    },
   },
 
   data: () => ({
-    name: '',
+    fname: '',
+    lname: '',
     phone: '',
-    street_address_1: '',
-    street_address_2: '',
-    county: '',
-    postcode: '',
     email: '',
-    city: '',
-    subject: '',
     message: '',
     msg: {
       type: '',
@@ -161,19 +143,23 @@ export default {
   }),
 
   computed: {
-    nameErrors() {
+    fnameErrors() {
       const errors = []
-      if (!this.$v.name.$dirty) return errors
-      !this.$v.name.maxLength &&
-        errors.push('Name must be at most 30 characters long')
-      !this.$v.name.required && errors.push('Name is required.')
+      if (!this.$v.fname.$dirty) return errors
+      !this.$v.fname.required && errors.push('Frist name is required.')
+      return errors
+    },
+    lnameErrors() {
+      const errors = []
+      if (!this.$v.lname.$dirty) return errors
+      !this.$v.lname.required && errors.push('Last name is required.')
       return errors
     },
     phoneErrors() {
       const errors = []
       if (!this.$v.phone.$dirty) return errors
       !this.$v.phone.maxLength &&
-        errors.push('Phone number must be at most 15 characters long')
+        errors.push('Phone number must be at most 11 digits long')
       !this.$v.phone.required && errors.push('Phone number is required.')
       return errors
     },
@@ -182,12 +168,6 @@ export default {
       if (!this.$v.email.$dirty) return errors
       !this.$v.email.email && errors.push('Must be valid e-mail')
       !this.$v.email.required && errors.push('E-mail is required')
-      return errors
-    },
-    subjectErrors() {
-      const errors = []
-      if (!this.$v.subject.$dirty) return errors
-      !this.$v.subject.required && errors.push('Please enter a subject.')
       return errors
     },
     messageErrors() {
@@ -199,7 +179,7 @@ export default {
   },
 
   methods: {
-    submit(event) {
+    submit() {
       this.$v.$touch()
       if (this.$v.$invalid) {
         this.msg = {
@@ -211,21 +191,37 @@ export default {
           type: 'info',
           message: 'Sending ...',
         }
-        this.sendEmail(event)
+        const templateParams = {
+          fname: this.fname,
+          lname: this.lname,
+          phone: this.phone,
+          message: this.message,
+          email: this.email,
+          subject: this.subject,
+        }
+
+        if (this.carDetails !== {}) {
+          templateParams.carDetails = this.carDetails
+        }
+
+        if (this.services !== []) {
+          templateParams.services = this.services
+        }
+        this.sendEmail(templateParams)
       }
     },
-    sendEmail(e) {
+    sendEmail(params) {
       emailjs
-        .sendForm(
+        .send(
           'service_mqk22oq',
-          'template_ac3abx9',
-          e.target,
+          'pcw_template_ac3abx9',
+          params,
           'user_nzDfhN2MWfSPkCKqEp7Td'
         )
         .then(
           (result) => {
             console.log('SUCCESS!', result.status, result.text)
-            console.log(e.target)
+            console.log(params)
             this.msg = {
               type: 'success',
               message: 'Message sent someone will be in touch shortly',
@@ -245,15 +241,10 @@ export default {
     },
     clear() {
       this.$v.$reset()
-      this.name = ''
+      this.fname = ''
+      this.lname = ''
       this.phone = ''
       this.email = ''
-      this.subject = ''
-      this.street_address_1 = ''
-      this.street_address_2 = ''
-      this.county = ''
-      this.city = ''
-      this.postcode = ''
       this.message = ''
       this.msg = {
         type: '',

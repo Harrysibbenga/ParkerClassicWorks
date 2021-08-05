@@ -78,20 +78,24 @@ export default {
       rightDrawer: false,
       navList: [
         {
-          link: '/profile',
-          title: 'Profile',
+          link: '/',
+          title: 'Home',
         },
         {
-          link: '/partners',
-          title: 'Partners',
+          link: '/caterham',
+          title: 'Caterham',
         },
         {
-          link: '/car',
-          title: 'The Car',
+          link: '/porsche',
+          title: 'Porsche',
         },
         {
-          link: '/news',
-          title: 'News',
+          link: '/detail',
+          title: 'Detail',
+        },
+        {
+          link: '/articles',
+          title: 'Articles',
         },
       ],
     }

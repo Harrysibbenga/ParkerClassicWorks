@@ -1,13 +1,13 @@
 <template>
   <v-container>
-    <v-row align="center" style="height: 500px">
+    <v-row align="center" style="max-height: 500px">
       <v-col v-for="(item, i) in items" :key="i">
         <a :href="item.link" target="_blank">
           <v-img
             :src="require('../../assets/images/' + item.url)"
             :max-height="100"
             :max-width="300"
-            class="mx-auto my-5"
+            class="mx-auto my-10"
           ></v-img>
         </a>
       </v-col>

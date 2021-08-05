@@ -10,7 +10,7 @@
       <v-img :src="require('../../assets/images/' + item.url)" height="100vh">
         <v-col cols="12 z-index-20">
           <ui-more-btn
-            :link="{ name: 'service-type', params: { type: item.type } }"
+            :link="item.type"
             class="text-center pt-16 mt-16"
           ></ui-more-btn>
         </v-col>
@@ -72,12 +72,12 @@ export default {
         {
           url: 'caterham/MALC4695.jpg',
           title: 'Caterham',
-          type: 'caterham',
+          type: '/caterham',
         },
         {
           url: 'porsche/IMG_3569.jpg',
           title: 'Porsche',
-          type: 'porsche',
+          type: '/porsche',
         },
       ],
       slide: 0,

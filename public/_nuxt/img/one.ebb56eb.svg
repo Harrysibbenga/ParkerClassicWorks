@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="596.597" height="256" viewBox="0 0 596.597 256">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1.02" y1="0.535" x2="0.241" y2="0.536" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.502"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="Path_534" x="0" y="37.405" width="596.597" height="218.095" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_31" data-name="Group 31" transform="translate(-124.951 -3112.5)">
+    <g transform="matrix(1, 0, 0, 1, 124.95, 3112.5)" filter="url(#Path_534)">
+      <path id="Path_534-2" data-name="Path 534" d="M-5671,3200l92.822,107.426L-5671,3400.1h-485.775V3200Z" transform="translate(6165.78 -3156.6)" fill="url(#linear-gradient)"/>
+    </g>
+    <text id="Vehicle_details" data-name="Vehicle
+details" transform="translate(452.951 3195)" fill="#fff" font-size="45" font-family="CoHeadline-Regular, Co Headline"><tspan x="-74.993" y="46">Vehicle</tspan><tspan x="-71.505" y="96">details</tspan></text>
+    <text id="_1" data-name="1" transform="translate(217.048 3112.5)" fill="#fff" font-size="200" font-family="CoHeadline-Regular, Co Headline"><tspan x="10.6" y="206">1</tspan></text>
+  </g>
+</svg>
+
+
+
+

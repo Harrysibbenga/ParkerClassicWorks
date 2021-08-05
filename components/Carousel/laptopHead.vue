@@ -13,7 +13,7 @@
       @mouseleave="active(null)"
     >
       <nuxt-link :to="item.link" class="">
-        <v-img :src="require('../../assets/images/' + item.url)" height="100vh">
+        <v-img :src="require('../../assets/images/' + item.url)" height="90vh">
           <div
             class="px-2"
             :class="{
@@ -45,12 +45,12 @@ export default {
         {
           url: 'caterham/MALC4695.jpg',
           title: 'Caterham',
-          link: '/',
+          link: '/caterham',
         },
         {
           url: 'porsche/IMG_3569.jpg',
           title: 'Porsche',
-          link: '/',
+          link: '/porsche',
         },
       ],
     }

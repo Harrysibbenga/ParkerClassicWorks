@@ -1,29 +1,31 @@
 <template>
-  <v-footer class="white--text primary pa-0 mt-5">
+  <v-footer class="white--text primary pa-0">
     <v-container fluid class="pa-0">
       <v-row no-gutters>
         <v-col cols="12" class="white">
           <section-map></section-map>
         </v-col>
-        <v-col cols="12" class="secondary">
-          <section-contact></section-contact>
+        <v-col id="contact" cols="12" class="secondary py-16">
+          <section-contact class="py-16"></section-contact>
         </v-col>
         <v-col cols="12" class="white">
           <section-partners></section-partners>
         </v-col>
       </v-row>
     </v-container>
-    <v-container>
+    <v-container fluid>
       <v-row>
         <v-col cols="12">
-          <h2 class="text-h2 text-center font-weight-bold py-8">
+          <h2 class="text-h2 text-center font-weight-bold py-10">
             Precision. Delivered.
           </h2>
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="12" md="8">
-          <h3 class="pb-5">About Parker Classic Works</h3>
+        <v-col cols="12" md="4">
+          <h3 class="pb-10 text-h5">
+            Your Leicestershire based Porsche and Caterham specialists
+          </h3>
           <p>
             Parker Classic Works continues a long family tradition, as the
             Parker family has been synonymous with car sales and servicing in
@@ -41,8 +43,74 @@
           </p>
         </v-col>
         <v-col cols="12" md="4" class="text-center">
-          <h3>Follow us</h3>
+          <Logo :width="300" :height="100" class="mx-auto"></Logo>
+          <section-subscribe class="pt-16"></section-subscribe>
+          <v-row
+            align="center"
+            justify="space-around"
+            style="width: 300px"
+            class="mx-auto"
+          >
+            <a class="text-decoration-none white--text">Carrers</a>
+            <v-divider vertical color="white"></v-divider>
+            <a class="text-decoration-none white--text">Privacy Policy</a>
+          </v-row>
         </v-col>
+        <v-col cols="12" md="4" class="text-center">
+          <a
+            href="tel:01455822612"
+            class="text-h2 text-decoration-none white--text"
+            >01455 822612</a
+          >
+          <h3 class="pt-16 text-h5">Follow us:</h3>
+          <v-container style="width: 200px">
+            <v-row class="mb-2">
+              <v-col cols="6">
+                <div class="text-right">
+                  <div class="my-3">
+                    <p class="my-auto">Instagram</p>
+                  </div>
+                  <div class="my-6">
+                    <p class="my-auto">LinkedIn</p>
+                  </div>
+                  <div class="my-3">
+                    <p class="my-auto">Facebook</p>
+                  </div>
+                  <div class="my-6">
+                    <p class="my-auto">Twitter</p>
+                  </div>
+                </div>
+              </v-col>
+              <v-col cols="6">
+                <div class="text-center">
+                  <div class="my-2">
+                    <v-btn color="white" small class="primary--text" fab>
+                      <v-icon>mdi-instagram</v-icon>
+                    </v-btn>
+                  </div>
+                  <div class="my-2">
+                    <v-btn color="white" small class="primary--text" fab>
+                      <v-icon>mdi-linkedin</v-icon>
+                    </v-btn>
+                  </div>
+                  <div class="my-2">
+                    <v-btn color="white" small class="primary--text" fab>
+                      <v-icon>mdi-facebook</v-icon>
+                    </v-btn>
+                  </div>
+                  <div class="my-2">
+                    <v-btn color="white" small class="primary--text" fab>
+                      <v-icon>mdi-twitter</v-icon>
+                    </v-btn>
+                  </div>
+                </div>
+              </v-col>
+            </v-row>
+          </v-container>
+        </v-col>
+      </v-row>
+      <v-row>
+        <section-affiliates></section-affiliates>
       </v-row>
       <v-row>
         <span class="mx-auto pa-4 mt-3"

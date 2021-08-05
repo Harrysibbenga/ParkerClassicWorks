@@ -87,13 +87,13 @@ export default {
           url: 'about/MALC4336.jpg',
           title: 'Why Parker Classic Works?',
           content:
-            'Precision. Delivered. <br/> <br/> These are the values Parker Classic Works stand by. With a family history in automotive sales, servicing, and repairs going back over 100 years, coupled with a quarter of a century of knowledge of competing in some of the biggest, best, and toughest motorsport events on the planet, the team know what it takes to look after machinery of all types. <br/> <br/> With a team of experienced mechanics utilising only the very best parts, on site detailing, partnerships with companies like Trackstar, XPEL, and Akrapovič, and a cosy, comfortable club house to relax in while you wait, Parker Classic Works is the obvious choice for servicing, maintenance, and remedial works for your car.<br/>',
+            'These are the values Parker Classic Works stand by. With a family history in automotive sales, servicing, and repairs going back over 100 years, coupled with a quarter of a century of knowledge of competing in some of the biggest, best, and toughest motorsport events on the planet, the team know what it takes to look after machinery of all types. <br/> <br/> With a team of experienced mechanics utilising only the very best parts, on site detailing, partnerships with companies like Trackstar, XPEL, and Akrapovič, and a cosy, comfortable club house to relax in while you wait, Parker Classic Works is the obvious choice for servicing, maintenance, and remedial works for your car.<br/><br/> <strong>Precision. Delivered.</strong> ',
         },
         {
           url: 'about/MALC1961.jpg',
           title: 'Values',
           content:
-            'To win races and championships at the pinnacle of sprint and endurance racing it takes precision, a meticulous focus, attention to detail, and the knowledge that you only get one shot at success.<br/><br/> Parker Classic Works will apply this same mentality to your road-going Caterham or Porsche.<br/><br/> Precision. Delivered.<br/><br/>',
+            'To win races and championships at the pinnacle of sprint and endurance racing it takes precision, a meticulous focus, attention to detail, and the knowledge that you only get one shot at success.<br/><br/> Parker Classic Works will apply this same mentality to your road-going Caterham or Porsche.<br/><br/> <strong>Precision. Delivered.</strong> <br/><br/>',
         },
         {
           url: 'about/Team.jpg',
@@ -119,7 +119,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .about-content {
   height: 725px;
   padding: 15px;

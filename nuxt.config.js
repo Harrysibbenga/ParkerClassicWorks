@@ -2,8 +2,8 @@
 module.exports = {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - pcw-webapp',
-    title: 'pcw-webapp',
+    titleTemplate: '%s - ParkerClassicWorks',
+    title: 'PCW',
     htmlAttrs: {
       lang: 'en',
     },
@@ -13,6 +13,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: '' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    script: [{ src: 'https://apps.elfsight.com/p/platform.js', defer: true }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -36,7 +37,6 @@ module.exports = {
     '@nuxtjs/stylelint-module',
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
-
     '@nuxtjs/dotenv',
   ],
 
