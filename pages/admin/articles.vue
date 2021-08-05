@@ -1,7 +1,7 @@
 <template>
   <div>
     <admin-add-post></admin-add-post>
-    <admin-edit-posts :posts="posts" :article="true"></admin-edit-posts>
+    <admin-edit-posts :posts="posts"></admin-edit-posts>
   </div>
 </template>
 

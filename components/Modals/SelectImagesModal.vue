@@ -41,7 +41,12 @@
                         text-center
                       "
                     >
-                      <img :src="img.url" :alt="img.alt" class="img-fluid" />
+                      <v-img
+                        :src="img.url"
+                        :alt="img.alt"
+                        width="100%"
+                        height="100%"
+                      />
                       <input
                         :id="img.id"
                         v-model="selectedImages"
@@ -81,7 +86,12 @@
                   class="p-2"
                   cols="12"
                 >
-                  <img :src="img.url" :alt="img.alt" class="img-fluid" />
+                  <v-img
+                    :src="img.url"
+                    :alt="img.alt"
+                    width="100%"
+                    height="100%"
+                  />
                 </v-col>
                 <div class="d-flex">
                   <v-btn

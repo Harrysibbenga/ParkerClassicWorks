@@ -22,7 +22,7 @@
           cols="6"
           md="4"
         >
-          <img :src="img.url" :alt="img.alt" class="img-fluid" />
+          <v-img :src="img.url" :alt="img.alt" width="100%" height="100%" />
           <v-btn
             elevation="2"
             outlined

@@ -6,31 +6,28 @@
       :delete.sync="deleteModal"
       :post.sync="emitedPost"
     />
-    <ModalDeleteModal
+    <ModalsDeleteModal
       :modal.sync="deleteModal"
       :item.sync="emitedPost"
       :confirmation.sync="confirmDelete"
     />
-    <ModalEditModal
+    <ModalsEditModal
       :modal.sync="editModal"
       :edit.sync="clickedPost"
       :confirmation.sync="confirmEdit"
-      :quote="article"
-      :gallery="article"
+      :type="'article'"
     />
   </v-container>
 </template>
 
 <script>
+import { postsCol } from '@/services/firebase'
+
 export default {
   props: {
     posts: {
       type: Array,
       default: () => [],
-    },
-    article: {
-      type: Boolean,
-      default: false,
     },
   },
   data() {
@@ -43,9 +40,9 @@ export default {
       newPost: {},
     }
   },
-  clickedPost: {
-    get() {
-      if (this.emitedPost.type === 'article') {
+  computed: {
+    clickedPost: {
+      get() {
         const clickedPost = {
           image: {
             id: this.emitedPost.imgId,
@@ -56,7 +53,6 @@ export default {
           content: {
             type: this.emitedPost.type,
             title: this.emitedPost.title,
-            track: this.emitedPost.track,
             content: this.emitedPost.content,
             excerpt: this.emitedPost.excerpt,
             date: this.emitedPost.date,
@@ -67,32 +63,10 @@ export default {
           id: this.emitedPost.id,
         }
         return clickedPost
-      } else {
-        const clickedPost = {
-          image: {
-            id: this.emitedPost.imgId,
-            url: this.emitedPost.url,
-            alt: this.emitedPost.alt,
-          },
-          gallery: this.emitedPost.gallery,
-          content: {
-            type: this.emitedPost.type,
-            title: this.emitedPost.title,
-            track: this.emitedPost.track,
-            content: this.emitedPost.content,
-            excerpt: this.emitedPost.excerpt,
-            date: this.emitedPost.date,
-          },
-          quotes: this.emitedPost.quotes,
-          slug: this.emitedPost.slug,
-          year: this.emitedPost.year,
-          id: this.emitedPost.id,
-        }
-        return clickedPost
-      }
-    },
-    set(newVal) {
-      this.newPost = newVal
+      },
+      set(newVal) {
+        this.newPost = newVal
+      },
     },
   },
   watch: {
@@ -110,7 +84,7 @@ export default {
   methods: {
     deleteConfirm(confirm) {
       if (confirm) {
-        this.col
+        postsCol
           .doc(this.clickedPost.id)
           .delete()
           .then(() => {
@@ -161,7 +135,7 @@ export default {
           this.clickedPost.image.alt = this.defaultImg.alt
         }
 
-        this.col
+        postsCol
           .doc(this.clickedPost.id)
           .update({
             title: this.clickedPost.content.title,
@@ -170,7 +144,6 @@ export default {
             date: this.clickedPost.content.date,
             content: this.clickedPost.content.content,
             quotes: this.clickedPost.quotes,
-            track: this.clickedPost.content.track,
             year: this.clickedPost.year,
             lastUpdateOn: new Date(),
             imgId: this.clickedPost.image.id,

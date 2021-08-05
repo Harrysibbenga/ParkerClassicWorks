@@ -1,97 +1,19 @@
 <template>
-  <v-container fluid class="p-0 pt-5">
+  <v-container fluid class="pt-5">
     <v-row>
       <v-col>
         <v-simple-table class="table">
           <thead>
-            <tr v-if="type == 'circuit'">
-              <th scope="col">Track</th>
-              <th scope="col">Created</th>
-              <th scope="col">Updated</th>
-              <th scope="col">Action</th>
-            </tr>
-            <tr v-if="type == 'post' || type == '' || type == 'partner'">
-              <th v-if="type == 'post' || type == ''" scope="col">Title</th>
-              <th v-else scope="col">Name</th>
-              <th v-if="type == 'post' || type == ''" scope="col">Date</th>
-              <th scope="col">Created</th>
-              <th scope="col">Updated</th>
-              <th v-if="type == 'partner'" scope="col">Order</th>
-              <th scope="col">Action</th>
-            </tr>
-            <tr v-if="type == 'calendar'">
-              <th scope="col">Track</th>
-              <th scope="col">Dates</th>
-              <th scope="col">Rounds</th>
+            <tr v-if="type == 'article'">
+              <th scope="col">Title</th>
               <th scope="col">Created</th>
               <th scope="col">Updated</th>
               <th scope="col">Action</th>
             </tr>
           </thead>
-          <tbody v-if="type == 'circuit'">
+          <tbody v-if="type == 'article'">
             <tr v-for="(post, index) in paginatedData" :key="index">
-              <th scope="row">{{ post.track }}</th>
-              <td>{{ post.createdOn | formatCreation }}</td>
-              <td v-if="post.lastUpdateOn != null">
-                {{ post.lastUpdateOn | formatCreation }}
-              </td>
-              <td v-else>-- -- --</td>
-              <td>
-                <v-btn class="mx-1 primary" @click.native="editPost(post)">
-                  <v-icon>mdi-circle-edit-outline</v-icon>
-                </v-btn>
-                <v-btn class="mx-1 error" @click.native="deletePost(post)">
-                  <v-icon>mdi-delete-circle-outline</v-icon>
-                </v-btn>
-              </td>
-            </tr>
-          </tbody>
-          <tbody v-if="type == 'post' || type == '' || type == 'partner'">
-            <tr v-for="(post, index) in paginatedData" :key="index">
-              <th scope="row">
-                {{ post.title }}
-              </th>
-              <td v-if="type == 'post' || type == ''">
-                {{ post.date | formatDate }}
-              </td>
-              <td>{{ post.createdOn | formatCreation }}</td>
-              <td v-if="post.lastUpdateOn != null">
-                {{ post.lastUpdateOn | formatCreation }}
-              </td>
-              <td v-else>-- -- --</td>
-              <td>
-                {{ post.order }}
-                <v-btn class="mx-1" @click.native="increment(post)">
-                  <v-icon>mdi-plus</v-icon>
-                </v-btn>
-                <v-btn class="mx-1" @click.native="decrement(post)">
-                  <v-icon>mdi-minus</v-icon>
-                </v-btn>
-              </td>
-              <td>
-                <v-btn class="mx-1 primary" @click.native="editPost(post)">
-                  <v-icon>mdi-circle-edit-outline</v-icon>
-                </v-btn>
-                <v-btn class="mx-1 error" @click.native="deletePost(post)">
-                  <v-icon>mdi-delete-circle-outline</v-icon>
-                </v-btn>
-              </td>
-            </tr>
-          </tbody>
-          <tbody v-if="type == 'calendar'">
-            <tr v-for="(post, index) in paginatedData" :key="index">
-              <th scope="row">
-                {{ post.track.track }}
-              </th>
-              <td>
-                <ul>
-                  <li>From: {{ post.dateFrom | formatDate }}</li>
-                  <li>To: {{ post.dateTo | formatDate }}</li>
-                </ul>
-              </td>
-              <td>
-                {{ post.rounds }}
-              </td>
+              <th scope="row">{{ post.title }}</th>
               <td>{{ post.createdOn | formatCreation }}</td>
               <td v-if="post.lastUpdateOn != null">
                 {{ post.lastUpdateOn | formatCreation }}
@@ -180,12 +102,6 @@ export default {
     deletePost(post) {
       this.$emit('update:delete', true)
       this.$emit('update:post', post)
-    },
-    increment(post) {
-      this.$store.dispatch('partners/moveDown', post.id)
-    },
-    decrement(post) {
-      this.$store.dispatch('partners/moveUp', post.id)
     },
   },
 }

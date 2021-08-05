@@ -39,11 +39,12 @@
                   cols="6"
                   md="4"
                 >
-                  <img
+                  <v-img
                     v-if="img"
                     :src="img.url"
                     :alt="img.alt"
-                    class="img-fluid"
+                    width="100%"
+                    height="100%"
                   />
                 </v-col>
               </v-row>

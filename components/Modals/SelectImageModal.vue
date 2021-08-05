@@ -34,7 +34,7 @@
                 <div
                   class="custom-control custom-radio custom-control text-center"
                 >
-                  <img
+                  <v-img
                     :src="itm.url"
                     :alt="itm.alt"
                     width="100%"
