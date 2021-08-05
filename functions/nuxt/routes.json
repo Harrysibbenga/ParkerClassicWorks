@@ -72,6 +72,13 @@
     "_name": "_e1bb0c32"
   },
   {
+    "name": "article-slug",
+    "path": "/article/:slug?",
+    "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/article/_slug.vue",
+    "chunkName": "pages/article/_slug",
+    "_name": "_b50ebfa8"
+  },
+  {
     "name": "service-type",
     "path": "/service/:type?",
     "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/service/_type.vue",

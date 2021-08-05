@@ -5,6 +5,9 @@
   "AdminAddPost": {
     "description": "Auto imported from components/Admin/addPost.vue"
   },
+  "AdminAddService": {
+    "description": "Auto imported from components/Admin/addService.vue"
+  },
   "AdminEditPosts": {
     "description": "Auto imported from components/Admin/editPosts.vue"
   },
@@ -14,15 +17,6 @@
   "AppHead": {
     "description": "Auto imported from components/App/head.vue"
   },
-  "DetailHead": {
-    "description": "Auto imported from components/Detail/head.vue"
-  },
-  "DetailMid": {
-    "description": "Auto imported from components/Detail/mid.vue"
-  },
-  "DetailSteps": {
-    "description": "Auto imported from components/Detail/steps.vue"
-  },
   "CarouselAbout": {
     "description": "Auto imported from components/Carousel/about.vue"
   },
@@ -31,6 +25,15 @@
   },
   "CarouselMobileHead": {
     "description": "Auto imported from components/Carousel/mobileHead.vue"
+  },
+  "DetailHead": {
+    "description": "Auto imported from components/Detail/head.vue"
+  },
+  "DetailMid": {
+    "description": "Auto imported from components/Detail/mid.vue"
+  },
+  "DetailSteps": {
+    "description": "Auto imported from components/Detail/steps.vue"
   },
   "ModalsDeleteModal": {
     "description": "Auto imported from components/Modals/DeleteModal.vue"
@@ -107,8 +110,14 @@
   "ServiceRegCheck": {
     "description": "Auto imported from components/Service/regCheck.vue"
   },
+  "ServiceServices": {
+    "description": "Auto imported from components/Service/services.vue"
+  },
   "ServiceType": {
     "description": "Auto imported from components/Service/type.vue"
+  },
+  "UiCard": {
+    "description": "Auto imported from components/Ui/card.vue"
   },
   "UiEditor": {
     "description": "Auto imported from components/Ui/editor.vue"

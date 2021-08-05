@@ -36,7 +36,7 @@
       </v-container>
     </v-col>
 
-    <v-col cols="12">
+    <v-col v-if="post.gallery.length > 0" cols="12">
       <v-container>
         <v-row>
           <v-col
@@ -61,16 +61,18 @@
       </v-container>
     </v-col>
 
-    <v-col
-      v-for="(content, index) in post.quotes"
-      :key="index"
-      cols="12"
-      class="py-15"
-    >
-      <v-container>
-        <h2>{{ content.name }}</h2>
-        <div class="py-5 text-justify" v-html="content.content"></div>
-      </v-container>
+    <v-col v-if="post.quotes.length > 0" cols="12">
+      <v-col
+        v-for="(content, index) in post.quotes"
+        :key="index"
+        cols="12"
+        class="py-15"
+      >
+        <v-container>
+          <h2>{{ content.name }}</h2>
+          <div class="py-5 text-justify" v-html="content.content"></div>
+        </v-container>
+      </v-col>
     </v-col>
   </v-row>
 </template>

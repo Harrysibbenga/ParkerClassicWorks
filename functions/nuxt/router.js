@@ -14,6 +14,7 @@ const _92fb8898 = () => interopDefault(import('../pages/home.vue' /* webpackChun
 const _37aa2164 = () => interopDefault(import('../pages/login.vue' /* webpackChunkName: "pages/login" */))
 const _5a08ac4a = () => interopDefault(import('../pages/porsche.vue' /* webpackChunkName: "pages/porsche" */))
 const _e1bb0c32 = () => interopDefault(import('../pages/test.vue' /* webpackChunkName: "pages/test" */))
+const _b50ebfa8 = () => interopDefault(import('../pages/article/_slug.vue' /* webpackChunkName: "pages/article/_slug" */))
 const _024f7c3a = () => interopDefault(import('../pages/service/_type.vue' /* webpackChunkName: "pages/service/_type" */))
 const _6e027e4d = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -69,6 +70,10 @@ export const routerOptions = {
     path: "/test",
     component: _e1bb0c32,
     name: "test"
+  }, {
+    path: "/article/:slug?",
+    component: _b50ebfa8,
+    name: "article-slug"
   }, {
     path: "/service/:type?",
     component: _024f7c3a,
