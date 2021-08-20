@@ -35,6 +35,9 @@
   "DetailSteps": {
     "description": "Auto imported from components/Detail/steps.vue"
   },
+  "DetailVideo": {
+    "description": "Auto imported from components/Detail/video.vue"
+  },
   "ModalsDeleteModal": {
     "description": "Auto imported from components/Modals/DeleteModal.vue"
   },
@@ -59,6 +62,9 @@
   "ModalsUploadModal": {
     "description": "Auto imported from components/Modals/UploadModal.vue"
   },
+  "ModalsManual": {
+    "description": "Auto imported from components/Modals/manual.vue"
+  },
   "PostEditPosts": {
     "description": "Auto imported from components/Post/EditPosts.vue"
   },
@@ -80,6 +86,9 @@
   "SectionContact": {
     "description": "Auto imported from components/Section/contact.vue"
   },
+  "SectionDetailContact": {
+    "description": "Auto imported from components/Section/detailContact.vue"
+  },
   "SectionFeature": {
     "description": "Auto imported from components/Section/feature.vue"
   },
@@ -94,6 +103,9 @@
   },
   "SectionSubscribe": {
     "description": "Auto imported from components/Section/subscribe.vue"
+  },
+  "ServiceApiCheck": {
+    "description": "Auto imported from components/Service/apiCheck.vue"
   },
   "ServiceBooking": {
     "description": "Auto imported from components/Service/booking.vue"

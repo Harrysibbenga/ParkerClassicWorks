@@ -5,9 +5,11 @@
         <v-img :src="post.url" :alt="post.alt" max-height="90vh">
           <v-row class="d-none d-md-block fill-height">
             <v-col cols="12" class="d-flex align-end fill-height">
-              <v-card-text>
-                <p class="text-h2 white--text font-weight-light">News:</p>
-                <h1 class="text-h3 white--text font-weight-medium">
+              <v-card-text class="primary mb-n6">
+                <p class="text-h3 white--text font-weight-light">
+                  News and Features:
+                </p>
+                <h1 class="text-h4 white--text font-weight-medium">
                   {{ post.title }}
                 </h1>
               </v-card-text>
@@ -15,7 +17,7 @@
           </v-row>
         </v-img>
         <v-card-text class="d-md-none">
-          <p class="text-h5 text-sm-h4 font-weight-light">News:</p>
+          <p class="text-h5 text-sm-h4 font-weight-light">News and Features:</p>
           <h1
             class="
               text-h5 text-sm-h4
@@ -36,7 +38,7 @@
       </v-container>
     </v-col>
 
-    <v-col v-if="post.gallery.length > 0" cols="12">
+    <v-col v-if="post.gallery != null" cols="12">
       <v-container>
         <v-row>
           <v-col
@@ -61,7 +63,7 @@
       </v-container>
     </v-col>
 
-    <v-col v-if="post.quotes.length > 0" cols="12">
+    <v-col v-if="post.quotes != null" cols="12">
       <v-col
         v-for="(content, index) in post.quotes"
         :key="index"
@@ -79,7 +81,7 @@
 
 <script>
 import { filter } from '@/mixins/filter'
-
+import { cloneDeep } from 'lodash'
 export default {
   name: 'Post',
   mixins: [filter],
@@ -106,7 +108,7 @@ export default {
         },
         {
           property: 'og:url',
-          content: 'https://stephenjelley.com/' + this.slug,
+          content: 'https://parkerclassicworks.com/' + this.slug,
         },
         {
           property: 'og:image',
@@ -114,7 +116,7 @@ export default {
         },
         {
           property: 'og:site_name',
-          content: 'Stephen Jelley | Official Website',
+          content: 'Parker Classic Works | Official Website',
         },
         { property: 'og:type', content: 'post' },
         { name: 'robots', content: 'index,follow' },
@@ -129,10 +131,17 @@ export default {
   created() {
     const slug = this.$route.params.slug
     this.$store.dispatch('posts/setPostSlug', slug).then((data) => {
-      this.post = data
-      data.gallery.forEach((img) => {
-        this.images.push(img.url)
-      })
+      this.post = cloneDeep(data)
+      if (this.post.gallery.length === 0) {
+        this.post.gallery = null
+      } else {
+        this.post.gallery.forEach((img) => {
+          this.images.push(img.url)
+        })
+      }
+      if (this.post.quotes[0].content === '') {
+        this.post.quotes = null
+      }
     })
   },
   destroyed() {

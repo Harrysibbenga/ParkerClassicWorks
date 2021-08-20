@@ -14,16 +14,12 @@
     >
     </v-img>
 
-    <v-card-text
-      class="primary--text text-center secondary"
-      style="min-height: 400px"
-    >
-      <h4 class="text-h5 primary--text pa-10">{{ excerpt }}</h4>
+    <v-card-text class="primary--text text-center" style="min-height: 300px">
+      <h4 class="text-h5 primary--text pa-5">{{ excerpt }}</h4>
       <v-row align="center" class="my-auto">
         <v-col cols="12">
           <v-btn
             color="primary"
-            class="secondary--text"
             x-large
             :nuxt="true"
             :to="{ name: 'article-slug', params: { slug: post.slug } }"

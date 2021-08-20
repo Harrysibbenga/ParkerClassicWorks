@@ -87,7 +87,7 @@ export default {
           url: 'about/MALC4336.jpg',
           title: 'Why Parker Classic Works?',
           content:
-            'These are the values Parker Classic Works stand by. With a family history in automotive sales, servicing, and repairs going back over 100 years, coupled with a quarter of a century of knowledge of competing in some of the biggest, best, and toughest motorsport events on the planet, the team know what it takes to look after machinery of all types. <br/> <br/> With a team of experienced mechanics utilising only the very best parts, on site detailing, partnerships with companies like Trackstar, XPEL, and Akrapovič, and a cosy, comfortable club house to relax in while you wait, Parker Classic Works is the obvious choice for servicing, maintenance, and remedial works for your car.<br/><br/> <strong>Precision. Delivered.</strong> ',
+            'These are the values Parker Classic Works stand by. With a family history in automotive sales, servicing, and repairs going back over 100 years, coupled with a quarter of a century of knowledge of competing in some of the biggest, best, and toughest motorsport events on the planet, the team know what it takes to look after machinery of all types. <br/> <br/> With a team of experienced mechanics utilising only the very best parts, on site detailing, partnerships with companies like Trackstar and a cosy, comfortable club house to relax in while you wait, Parker Classic Works is the obvious choice for servicing, maintenance, and remedial works for your car.<br/><br/> <strong>Precision. Delivered.</strong> ',
         },
         {
           url: 'about/MALC1961.jpg',

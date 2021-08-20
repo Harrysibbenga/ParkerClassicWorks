@@ -1,6 +1,6 @@
 <template>
   <v-container fluid class="primary white--text">
-    <h1 class="text-h3 pa-5 py-16">SERVICE COST INDICATOR</h1>
+    <h1 class="text-h3 pa-5 py-16">SERVICE ENQUIRY</h1>
     <v-row class="pb-10">
       <v-col cols="4" class="service-section" @click="slide = 0">
         <v-img
@@ -53,7 +53,12 @@ export default {
     return {
       slide: 0,
       formData: {
-        carDetails: {},
+        carDetails: {
+          reg: '',
+          make: '',
+          model: '',
+          year: '',
+        },
         contact: {
           firstName: '',
           lastName: '',

@@ -29,6 +29,7 @@
     "jwt-decode": "^3.1.2",
     "moment": "^2.29.1",
     "nuxt": "^2.2.0",
+    "vue-easy-lightbox": "^0.16.1",
     "vuelidate": "^0.7.6"
   },
   "devDependencies": {

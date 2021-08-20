@@ -1,12 +1,49 @@
 <template>
   <v-app dark>
-    <h1 v-if="error.statusCode === 404">
-      {{ pageNotFound }}
-    </h1>
-    <h1 v-else>
-      {{ otherError }}
-    </h1>
-    <NuxtLink to="/"> Home page </NuxtLink>
+    <v-img :src="require('../assets/images/svg/home.svg')" height="100vh">
+      <v-row class="fill-height mx-auto" style="max-width: 700px">
+        <h1
+          v-if="error.statusCode === 404"
+          class="
+            align-self-end
+            pb-16
+            text-center
+            mx-auto
+            text-h4
+            font-weight-bold
+            white--text
+          "
+        >
+          Oh no !!! {{ pageNotFound }}
+          <br />
+          <NuxtLink class="secondary--text" to="/"> Lets go back home</NuxtLink>
+          <br />
+          <NuxtLink class="secondary--text" to="/news">
+            Or view some news articles</NuxtLink
+          >
+        </h1>
+        <h1
+          v-else
+          class="
+            align-self-end
+            pb-16
+            text-center
+            mx-auto
+            text-h4
+            font-weight-bold
+            white--text
+          "
+        >
+          Oh no !!! {{ otherError }}
+          <br />
+          <NuxtLink class="secondary--text" to="/"> Lets go back home</NuxtLink>
+          <br />
+          <NuxtLink class="secondary--text" to="/news">
+            Or view some news articles</NuxtLink
+          >
+        </h1>
+      </v-row>
+    </v-img>
   </v-app>
 </template>
 

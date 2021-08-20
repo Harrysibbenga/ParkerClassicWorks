@@ -56,7 +56,10 @@
           </v-col>
         </v-row>
         <v-row>
-          <section-contact></section-contact>
+          <section-contact
+            :services="services"
+            :car-details="carDetails"
+          ></section-contact>
         </v-row>
       </v-col>
     </v-row>

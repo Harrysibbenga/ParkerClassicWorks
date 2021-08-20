@@ -26,6 +26,7 @@
     "js-cookie": "^2.2.1",
     "jwt-decode": "^3.1.2",
     "nuxt-start": "^2.15.6",
+    "vue-easy-lightbox": "^0.16.1",
     "vuelidate": "^0.7.6"
   },
   "devDependencies": {

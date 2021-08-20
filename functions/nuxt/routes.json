@@ -23,13 +23,6 @@
     "_name": "_c11c5b6c"
   },
   {
-    "name": "articles",
-    "path": "/articles",
-    "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/articles.vue",
-    "chunkName": "pages/articles",
-    "_name": "_662bd8dc"
-  },
-  {
     "name": "caterham",
     "path": "/caterham",
     "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/caterham.vue",
@@ -37,18 +30,11 @@
     "_name": "_3906eff4"
   },
   {
-    "name": "detail",
-    "path": "/detail",
-    "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/detail.vue",
-    "chunkName": "pages/detail",
-    "_name": "_2abf4a34"
-  },
-  {
-    "name": "home",
-    "path": "/home",
-    "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/home.vue",
-    "chunkName": "pages/home",
-    "_name": "_92fb8898"
+    "name": "detailing",
+    "path": "/detailing",
+    "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/detailing.vue",
+    "chunkName": "pages/detailing",
+    "_name": "_45835328"
   },
   {
     "name": "login",
@@ -58,6 +44,13 @@
     "_name": "_37aa2164"
   },
   {
+    "name": "news",
+    "path": "/news",
+    "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/news.vue",
+    "chunkName": "pages/news",
+    "_name": "_26a0b7a8"
+  },
+  {
     "name": "porsche",
     "path": "/porsche",
     "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/porsche.vue",
@@ -65,11 +58,11 @@
     "_name": "_5a08ac4a"
   },
   {
-    "name": "test",
-    "path": "/test",
-    "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/test.vue",
-    "chunkName": "pages/test",
-    "_name": "_e1bb0c32"
+    "name": "trackstar",
+    "path": "/trackstar",
+    "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/trackstar.vue",
+    "chunkName": "pages/trackstar",
+    "_name": "_350f6898"
   },
   {
     "name": "article-slug",
@@ -77,13 +70,6 @@
     "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/article/_slug.vue",
     "chunkName": "pages/article/_slug",
     "_name": "_b50ebfa8"
-  },
-  {
-    "name": "service-type",
-    "path": "/service/:type?",
-    "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/service/_type.vue",
-    "chunkName": "pages/service/_type",
-    "_name": "_024f7c3a"
   },
   {
     "name": "index",

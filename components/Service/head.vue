@@ -1,5 +1,5 @@
 <template>
-  <v-img :src="require('../../assets/images/' + head.url)" height="100vh">
+  <v-img :src="require('../../assets/images/' + head.url)" height="90vh">
     <div
       class="px-2"
       :class="{

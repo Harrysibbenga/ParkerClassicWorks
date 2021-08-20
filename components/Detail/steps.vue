@@ -1,11 +1,11 @@
 <template>
   <v-container fluid>
-    <v-row class="primary" style="min-height: 80vh">
+    <v-row class="primary" style="min-height: 100vh">
       <v-img
         v-for="(item, i) in items"
         :key="i"
         :src="require('../../assets/images/' + item.url)"
-        height="80vh"
+        height="100vh"
         :class="{
           'zoom-show': active === i,
           'default-img': active !== i,
@@ -22,13 +22,43 @@
                   {{ item.title }}
                 </h2>
                 <p>{{ item.text }}</p>
+
+                <v-btn plain color="white" @click="goBack"
+                  >Click to return >></v-btn
+                >
               </v-col>
             </v-row>
           </v-container>
         </div>
       </v-img>
 
-      <v-row class="overflow-hidden">
+      <v-col
+        cols="12"
+        class="d-none d-lg-block pa-0 default-img-row-detail"
+        :class="{ 'zoom-hide': slide !== null }"
+      >
+        <v-row no-gutters>
+          <v-col v-for="(item, i) in items" :key="i" cols="6">
+            <v-img
+              :src="require('../../assets/images/' + item.url)"
+              class="pointer"
+              :class="{ 'd-none': active !== null }"
+              height="50vh"
+              @mouseenter="hover(i)"
+              @mouseleave="hover(null)"
+              @click="view(i)"
+            >
+              <div class="px-2 default-left-detail primary">
+                <h2 class="text-h4 white--text text-uppercase">
+                  <span>{{ item.title }}</span>
+                </h2>
+              </div>
+            </v-img>
+          </v-col>
+        </v-row>
+      </v-col>
+
+      <v-row class="overflow-hidden d-lg-none">
         <v-col cols="12" class="d-flex flex-center">
           <ul class="text-center white--text ma-auto list-style">
             <li
@@ -60,10 +90,11 @@ export default {
     return {
       slide: null,
       active: null,
+      side: null,
       items: [
         {
           url: 'detail/Decontamination.png',
-          title: 'Full cleaning and decontamination',
+          title: 'Cleaning & decontamination',
           text: 'This consists of touchless decontamination with snow foam and pressure wash, touchless tar and removal, and touchless iron fallout removal. The wheels will be fully decontaminated with appropriate chemicals and the car will be pressure washed and hand washed using pH neutral products. The car is also treated with a clay bar as well. Once dried, it will then be moved into the detailing lab where the paint will be inspected. From here your vehicle will go through the stage process, dependent on your needs or requirements.',
         },
         {
@@ -97,6 +128,9 @@ export default {
         this.slide = null
       }, 600)
     },
+    hover(index) {
+      this.side = index
+    },
   },
 }
 </script>
@@ -106,6 +140,16 @@ export default {
   transform: scale(1);
   transition: transform 0.5s ease-in;
   position: relative;
+}
+
+.zoom-hide {
+  transform: scale(0);
+  transition: transform 0.5s ease-in;
+  position: relative;
+}
+
+.default-img-row-detail {
+  transition: all 0.5s ease-in;
 }
 
 .default-img {
@@ -161,5 +205,14 @@ export default {
   list-style-type: none;
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.default-left-detail {
+  position: absolute;
+  left: 0;
+  bottom: 20%;
+  margin-left: 50px;
+  text-align: right;
+  min-width: fit-content;
 }
 </style>

@@ -3,8 +3,6 @@
     <v-col
       v-for="(item, i) in items"
       :key="i"
-      name="expand"
-      mode="out-in"
       :class="{
         growCont: side === i,
         shrinkCont: side !== i,

@@ -48,7 +48,7 @@ export default {
       post: {
         head: {
           url: 'porsche/MALK5257.png',
-          title: 'Porcshe',
+          title: 'Porsche',
           position: 'left',
         },
         mid: {

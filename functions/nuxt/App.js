@@ -9,9 +9,10 @@ import '../assets/scss/main.scss'
 
 import _77068119 from '../layouts/admin.vue'
 import _6f6c098b from '../layouts/default.vue'
+import _77430317 from '../layouts/empty.vue'
 import _546b2a0d from '../layouts/holding.vue'
 
-const layouts = { "_admin": sanitizeComponent(_77068119),"_default": sanitizeComponent(_6f6c098b),"_holding": sanitizeComponent(_546b2a0d) }
+const layouts = { "_admin": sanitizeComponent(_77068119),"_default": sanitizeComponent(_6f6c098b),"_empty": sanitizeComponent(_77430317),"_holding": sanitizeComponent(_546b2a0d) }
 
 export default {
   render (h, props) {

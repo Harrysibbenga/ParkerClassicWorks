@@ -19,6 +19,8 @@ module.exports = {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: ['~/assets/scss/main.scss'],
 
+  plugins: [{ src: '~/plugins/vue-easy-lightbox.js', mode: 'client' }],
+
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   // plugins: ['~/plugins/axios.js'],
 

@@ -1,7 +1,25 @@
-// insert main styles here 
+// insert main styles here
 html {
   scroll-behavior: auto;
   scroll-behavior: smooth;
+}
+
+.gradient {
+  background: rgb(27, 63, 122);
+  background: linear-gradient(
+    0deg,
+    rgba(27, 63, 122, 0) 0%,
+    rgba(27, 63, 122, 1) 40%,
+    rgba(27, 63, 122, 1) 100%
+  );
+}
+
+.font-size-small {
+  font-size: small;
+}
+
+.font-size-x-small {
+  font-size: x-small;
 }
 
 // positions
@@ -17,7 +35,7 @@ html {
   position: fixed;
 }
 
-// z index 
+// z index
 .z-index-1 {
   z-index: 1 !important;
 }
@@ -80,7 +98,7 @@ html {
 
 .shrinkCont {
   transition: all 3s ease;
-  min-width: 10% !important
+  min-width: 10% !important;
 }
 
 .shrink {
@@ -90,7 +108,7 @@ html {
   transition: all 3s ease;
 }
 
-// text 
+// text
 .text-size {
   font-size: large;
 }
@@ -103,10 +121,12 @@ html {
   cursor: pointer;
 }
 
-// input 
+// input
 
-.theme--light.v-text-field--solo.disabled-input>.v-input__control>.v-input__slot {
-  background: rgba(255, 255, 255, 0.178)
+.theme--light.v-text-field--solo.disabled-input
+  > .v-input__control
+  > .v-input__slot {
+  background: rgba(255, 255, 255, 0.178);
 }
 
 .theme--light.v-input.disabled-input input,

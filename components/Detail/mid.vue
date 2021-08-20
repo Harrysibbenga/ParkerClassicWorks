@@ -1,7 +1,8 @@
 <template>
   <v-img
     :src="require('../../assets/images/' + mid.url)"
-    height="100vh"
+    :height="height"
+    :width="width"
   ></v-img>
 </template>
 
@@ -11,6 +12,14 @@ export default {
     mid: {
       type: Object,
       required: true,
+    },
+    height: {
+      type: String,
+      default: '100vh',
+    },
+    width: {
+      type: String,
+      default: '100%',
     },
   },
 }

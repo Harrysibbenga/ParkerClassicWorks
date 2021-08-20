@@ -72,37 +72,37 @@ export default {
           {
             url: 'caterham/icons/repairs.svg',
             title: 'Repairs',
-            text: 'Parker Classic Works can undertake a wide range of repairs for your Porsche, including engine and gearbox rebuilds, utilising all new parts and providing an as-new finish.',
+            text: 'Parker Classic Works can undertake a wide range of repairs for your Caterham, including engine and gearbox rebuilds, utilising all new parts and providing an as-new finish.',
           },
           {
             url: 'caterham/icons/fault_diag.svg',
             title: 'Fault Diagnostics',
-            text: 'If your Porsche is displaying an error code, book a visit to Parker Classic Works, which can utilise its diagnostic software to get to the bottom of what is ailing your car.',
+            text: 'If your Caterham is displaying an error code, book a visit to Parker Classic Works, which can utilise its diagnostic software to get to the bottom of what is ailing your car.',
           },
           {
             url: 'caterham/icons/recomission.svg',
             title: 'Recomissioning',
-            text: 'No matter if your classic Porsche has been on the road or sitting in storage for some time, as the Parker Classic Works team will offer a full health check on your machine, which will lead to a planned and agreed package of work to recommission it back to its full glory.',
+            text: 'No matter if your classic Caterham has been on the road or sitting in storage for some time, as the Parker Classic Works team will offer a full health check on your machine, which will lead to a planned and agreed package of work to recommission it back to its full glory.',
           },
           {
             url: 'caterham/icons/storage.svg',
             title: 'Storage',
-            text: 'Keep your Porsche is a secure, dry, environmentally stable location, to ensure it remains in tip-top condition. The Parker Classic Works team is also able to offer car covers, battery conditioners, periodic start up, and regular washes, so all you have to do is arrive and enjoy your car.',
+            text: 'Keep your Caterham is a secure, dry, environmentally stable location, to ensure it remains in tip-top condition. The Parker Classic Works team is also able to offer car covers, battery conditioners, periodic start up, and regular washes, so all you have to do is arrive and enjoy your car.',
           },
           {
             url: 'caterham/icons/paint.svg',
             title: 'Paint',
-            text: 'The finish of your Porsche is as important to the Parker Classic Works team as it is to you as an owner. Full care and attention is given to your car, with full cleaning and detailing using SONAX products, before any repairs and resprays are undertaken.',
+            text: 'The finish of your Caterham is as important to the Parker Classic Works team as it is to you as an owner. Full care and attention is given to your car, with full cleaning and detailing using SONAX products, before any repairs and resprays are undertaken.',
           },
           {
             url: 'caterham/icons/trim.svg',
             title: 'Trim',
-            text: 'Down to the smallest areas of trim on your Porsche, the Parker Classic Works team is dedicated to ensuring repairs and complete re-trims are conducted and completed to the highest possible standards.',
+            text: 'Down to the smallest areas of trim on your Caterham, the Parker Classic Works team is dedicated to ensuring repairs and complete re-trims are conducted and completed to the highest possible standards.',
           },
           {
             url: 'caterham/icons/track_prep.svg',
             title: 'Track Preparation',
-            text: 'If required, the Parker Classic Works team can utilise its decades of motorsport experience to set your Porsche up for track days. However, the team is not able to offer full trackside support.',
+            text: 'If required, the Parker Classic Works team can utilise its decades of motorsport experience to set your Caterham up for track days. However, the team is not able to offer full trackside support.',
           },
           {
             url: 'caterham/icons/health_check.svg',

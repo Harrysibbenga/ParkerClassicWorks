@@ -1,8 +1,39 @@
 <template>
   <v-container>
+    <v-row v-if="map">
+      <h3 class="text-h3 pa-2 pb-4 text-center white--text primary">
+        {{ title }}
+      </h3>
+    </v-row>
+    <v-row
+      v-if="map"
+      class="py-16 mx-auto"
+      align="center"
+      justify="center"
+      cols="6"
+    >
+      <v-col class="text-center py-5">
+        <p class="text-right mr-md-16 pr-md-10">
+          Parker Classic Works
+          <br />
+          Hinckley Road,
+          <br />
+          Leicester
+          <br />
+          LE9 9RE
+        </p>
+      </v-col>
+      <v-divider vertical color="white"></v-divider>
+      <v-col class="text-left py-5" cols="6">
+        <a
+          href="tel:01455822612"
+          class="text-h4 text-decoration-none white--text ml-md-16 pl-md-10"
+          >01455 822612</a
+        >
+      </v-col>
+    </v-row>
     <v-row>
       <v-col cols="12" lg="8" class="offset-lg-2">
-        <h3 class="text-h3 pb-15 text-center white--text">{{ title }}</h3>
         <form @submit.prevent="submit">
           <v-row align="center">
             <v-col cols="12" md="6">
@@ -128,6 +159,10 @@ export default {
       type: String,
       default: 'white',
     },
+    map: {
+      type: Boolean,
+      default: false,
+    },
   },
 
   data: () => ({
@@ -201,7 +236,10 @@ export default {
         }
 
         if (this.carDetails !== {}) {
-          templateParams.carDetails = this.carDetails
+          templateParams.make = this.carDetails.make
+          templateParams.model = this.carDetails.model
+          templateParams.reg = this.carDetails.reg
+          templateParams.year = this.carDetails.year
         }
 
         if (this.services !== []) {
@@ -214,14 +252,13 @@ export default {
       emailjs
         .send(
           'service_mqk22oq',
-          'pcw_template_ac3abx9',
+          'pcw_gen_template_1u1a2xf',
           params,
           'user_nzDfhN2MWfSPkCKqEp7Td'
         )
         .then(
           (result) => {
             console.log('SUCCESS!', result.status, result.text)
-            console.log(params)
             this.msg = {
               type: 'success',
               message: 'Message sent someone will be in touch shortly',
@@ -236,21 +273,31 @@ export default {
           }
         )
         .then(() => {
-          this.clear()
+          this.reset()
         })
     },
     clear() {
+      this.reset()
+      this.msg = {
+        type: '',
+        message: '',
+      }
+    },
+    reset() {
       this.$v.$reset()
       this.fname = ''
       this.lname = ''
       this.phone = ''
       this.email = ''
       this.message = ''
-      this.msg = {
-        type: '',
-        message: '',
-      }
     },
   },
 }
 </script>
+
+<style scoped>
+h3 {
+  text-align: right;
+  min-width: fit-content;
+}
+</style>

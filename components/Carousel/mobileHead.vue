@@ -7,14 +7,10 @@
     height="100vh"
   >
     <v-carousel-item v-for="(item, i) in items" :key="i">
-      <v-img :src="require('../../assets/images/' + item.url)" height="100vh">
-        <v-col cols="12 z-index-20">
-          <ui-more-btn
-            :link="item.type"
-            class="text-center pt-16 mt-16"
-          ></ui-more-btn>
-        </v-col>
-      </v-img>
+      <v-img
+        :src="require('../../assets/images/' + item.url)"
+        height="100vh"
+      ></v-img>
     </v-carousel-item>
     <v-container fluid class="absolute fill-height">
       <v-row
@@ -42,6 +38,19 @@
             <h2 v-else class="text-h5"></h2>
           </div>
         </transition>
+      </v-row>
+      <v-row>
+        <v-col
+          v-for="(item, i) in items"
+          :key="i"
+          cols="12 z-index-20 absolute"
+        >
+          <ui-more-btn
+            v-if="slide === i"
+            :link="item.type"
+            class="text-center"
+          ></ui-more-btn>
+        </v-col>
       </v-row>
       <v-row class="px-10 align-end" justify="center">
         <div v-for="(item, i) in items" :key="i">

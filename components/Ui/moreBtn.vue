@@ -1,14 +1,19 @@
 <template>
   <div>
     <v-btn
-      v-if="mobileRes || tabletRes"
+      v-if="!laptopRes"
       :nuxt="true"
-      :to="link"
+      :to="link == '' ? page : link"
       plain
       color="white"
       >Tap for more >></v-btn
     >
-    <v-btn v-else :to="link" :nuxt="true" plain color="white"
+    <v-btn
+      v-else
+      :to="link == '' ? page : link"
+      :nuxt="true"
+      plain
+      color="white"
       >Click for more >></v-btn
     >
   </div>
@@ -21,7 +26,11 @@ export default {
   props: {
     link: {
       type: String,
-      required: true,
+      default: '',
+    },
+    page: {
+      type: Object,
+      default: () => {},
     },
   },
 }

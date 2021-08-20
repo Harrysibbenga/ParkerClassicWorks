@@ -15,6 +15,7 @@
 
       <v-spacer />
       <v-app-bar-nav-icon
+        x-large
         @click.stop="rightDrawer = !rightDrawer"
       ></v-app-bar-nav-icon>
     </v-app-bar>
@@ -32,16 +33,11 @@
                 :key="index"
                 :nuxt="true"
                 :to="item.link"
-                class="py-4"
+                class="py-6"
                 @click.native="close()"
               >
-                <v-list-item-title class="white--text text-h4 text-center">
+                <v-list-item-title class="white--text text-h6 text-center">
                   {{ item.title }}
-                </v-list-item-title>
-              </v-list-item>
-              <v-list-item href="#contact" class="py-4" @click.native="close()">
-                <v-list-item-title class="white--text text-h4 text-center">
-                  Contact
                 </v-list-item-title>
               </v-list-item>
               <v-list-item
@@ -90,12 +86,16 @@ export default {
           title: 'Porsche',
         },
         {
-          link: '/detail',
-          title: 'Detail',
+          link: '/news',
+          title: 'News and Features',
         },
         {
-          link: '/articles',
-          title: 'Articles',
+          link: '/detailing',
+          title: 'Detailing',
+        },
+        {
+          link: '/trackstar',
+          title: 'Trackstar',
         },
       ],
     }
