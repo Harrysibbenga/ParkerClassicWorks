@@ -56,7 +56,9 @@
           >
             <a class="text-decoration-none white--text">Careers</a>
             <v-divider vertical color="white"></v-divider>
-            <a class="text-decoration-none white--text">Privacy Policy</a>
+            <nuxt-link class="text-decoration-none white--text" to="/policy"
+              >Privacy Policy</nuxt-link
+            >
           </v-row>
         </v-col>
         <v-col cols="12" md="4" class="text-center">

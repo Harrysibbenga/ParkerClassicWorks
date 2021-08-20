@@ -44,7 +44,7 @@
       <v-container>
         <v-row>
           <v-col cols="12" class="py-10">
-            <detail-video></detail-video>
+            <detail-video :video="video"></detail-video>
           </v-col>
         </v-row>
       </v-container>
@@ -70,6 +70,7 @@ export default {
         url: 'trackstar/MALK5894.png',
       },
     },
+    video: 'https://www.youtube.com/embed/Euz4otrudZc',
   }),
 }
 </script>

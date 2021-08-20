@@ -7,10 +7,12 @@ import scrollBehavior from './router.scrollBehavior.js'
 const _c11c5b6c = () => interopDefault(import('../pages/admin.vue' /* webpackChunkName: "pages/admin" */))
 const _2b5e8edc = () => interopDefault(import('../pages/admin/articles.vue' /* webpackChunkName: "pages/admin/articles" */))
 const _1746fe33 = () => interopDefault(import('../pages/admin/services.vue' /* webpackChunkName: "pages/admin/services" */))
+const _0288b673 = () => interopDefault(import('../pages/akrapovic.vue' /* webpackChunkName: "pages/akrapovic" */))
 const _3906eff4 = () => interopDefault(import('../pages/caterham.vue' /* webpackChunkName: "pages/caterham" */))
 const _45835328 = () => interopDefault(import('../pages/detailing.vue' /* webpackChunkName: "pages/detailing" */))
 const _37aa2164 = () => interopDefault(import('../pages/login.vue' /* webpackChunkName: "pages/login" */))
 const _26a0b7a8 = () => interopDefault(import('../pages/news.vue' /* webpackChunkName: "pages/news" */))
+const _f13ee172 = () => interopDefault(import('../pages/policy.vue' /* webpackChunkName: "pages/policy" */))
 const _5a08ac4a = () => interopDefault(import('../pages/porsche.vue' /* webpackChunkName: "pages/porsche" */))
 const _350f6898 = () => interopDefault(import('../pages/trackstar.vue' /* webpackChunkName: "pages/trackstar" */))
 const _b50ebfa8 = () => interopDefault(import('../pages/article/_slug.vue' /* webpackChunkName: "pages/article/_slug" */))
@@ -41,6 +43,10 @@ export const routerOptions = {
       name: "admin-services"
     }]
   }, {
+    path: "/akrapovic",
+    component: _0288b673,
+    name: "akrapovic"
+  }, {
     path: "/caterham",
     component: _3906eff4,
     name: "caterham"
@@ -56,6 +62,10 @@ export const routerOptions = {
     path: "/news",
     component: _26a0b7a8,
     name: "news"
+  }, {
+    path: "/policy",
+    component: _f13ee172,
+    name: "policy"
   }, {
     path: "/porsche",
     component: _5a08ac4a,
