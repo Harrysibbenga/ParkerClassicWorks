@@ -15,6 +15,7 @@
         <v-tab :nuxt="true" to="/admin">Home</v-tab>
         <!-- <v-tab :nuxt="true" to="/admin/services"> Services </v-tab> -->
         <v-tab :nuxt="true" to="/admin/articles"> Articles </v-tab>
+        <v-tab :nuxt="true" to="/admin/careers"> Careers </v-tab>
       </v-tabs>
     </v-container>
 

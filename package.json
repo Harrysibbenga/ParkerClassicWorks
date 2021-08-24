@@ -23,6 +23,7 @@
     "@nuxtjs/proxy": "^2.1.0",
     "cookieparser": "^0.1.0",
     "core-js": "^3.9.1",
+    "detect-node": "^2.1.0",
     "emailjs-com": "^2.6.4",
     "firebase": "^8.6.4",
     "js-cookie": "^2.2.1",

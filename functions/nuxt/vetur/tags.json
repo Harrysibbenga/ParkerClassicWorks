@@ -11,21 +11,6 @@
   "AdminEditPosts": {
     "description": "Auto imported from components/Admin/editPosts.vue"
   },
-  "AppFoot": {
-    "description": "Auto imported from components/App/foot.vue"
-  },
-  "AppHead": {
-    "description": "Auto imported from components/App/head.vue"
-  },
-  "CarouselAbout": {
-    "description": "Auto imported from components/Carousel/about.vue"
-  },
-  "CarouselLaptopHead": {
-    "description": "Auto imported from components/Carousel/laptopHead.vue"
-  },
-  "CarouselMobileHead": {
-    "description": "Auto imported from components/Carousel/mobileHead.vue"
-  },
   "DetailHead": {
     "description": "Auto imported from components/Detail/head.vue"
   },
@@ -37,6 +22,48 @@
   },
   "DetailVideo": {
     "description": "Auto imported from components/Detail/video.vue"
+  },
+  "CarouselAbout": {
+    "description": "Auto imported from components/Carousel/about.vue"
+  },
+  "CarouselLaptopHead": {
+    "description": "Auto imported from components/Carousel/laptopHead.vue"
+  },
+  "CarouselMobileHead": {
+    "description": "Auto imported from components/Carousel/mobileHead.vue"
+  },
+  "AppFoot": {
+    "description": "Auto imported from components/App/foot.vue"
+  },
+  "AppHead": {
+    "description": "Auto imported from components/App/head.vue"
+  },
+  "ModalsDeleteModal": {
+    "description": "Auto imported from components/Modals/DeleteModal.vue"
+  },
+  "ModalsEditModal": {
+    "description": "Auto imported from components/Modals/EditModal.vue"
+  },
+  "ModalsExistsModal": {
+    "description": "Auto imported from components/Modals/ExistsModal.vue"
+  },
+  "ModalsMultiUpload": {
+    "description": "Auto imported from components/Modals/MultiUpload.vue"
+  },
+  "ModalsSelectImageModal": {
+    "description": "Auto imported from components/Modals/SelectImageModal.vue"
+  },
+  "ModalsSelectImagesModal": {
+    "description": "Auto imported from components/Modals/SelectImagesModal.vue"
+  },
+  "ModalsSelectModal": {
+    "description": "Auto imported from components/Modals/SelectModal.vue"
+  },
+  "ModalsUploadModal": {
+    "description": "Auto imported from components/Modals/UploadModal.vue"
+  },
+  "ModalsManual": {
+    "description": "Auto imported from components/Modals/manual.vue"
   },
   "PostEditPosts": {
     "description": "Auto imported from components/Post/EditPosts.vue"
@@ -100,33 +127,6 @@
   },
   "ServiceType": {
     "description": "Auto imported from components/Service/type.vue"
-  },
-  "ModalsDeleteModal": {
-    "description": "Auto imported from components/Modals/DeleteModal.vue"
-  },
-  "ModalsEditModal": {
-    "description": "Auto imported from components/Modals/EditModal.vue"
-  },
-  "ModalsExistsModal": {
-    "description": "Auto imported from components/Modals/ExistsModal.vue"
-  },
-  "ModalsMultiUpload": {
-    "description": "Auto imported from components/Modals/MultiUpload.vue"
-  },
-  "ModalsSelectImageModal": {
-    "description": "Auto imported from components/Modals/SelectImageModal.vue"
-  },
-  "ModalsSelectImagesModal": {
-    "description": "Auto imported from components/Modals/SelectImagesModal.vue"
-  },
-  "ModalsSelectModal": {
-    "description": "Auto imported from components/Modals/SelectModal.vue"
-  },
-  "ModalsUploadModal": {
-    "description": "Auto imported from components/Modals/UploadModal.vue"
-  },
-  "ModalsManual": {
-    "description": "Auto imported from components/Modals/manual.vue"
   },
   "UiCard": {
     "description": "Auto imported from components/Ui/card.vue"

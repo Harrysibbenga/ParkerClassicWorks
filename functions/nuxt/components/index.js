@@ -4,15 +4,24 @@ export { default as Logo } from '../../components/Logo.vue'
 export { default as AdminAddPost } from '../../components/Admin/addPost.vue'
 export { default as AdminAddService } from '../../components/Admin/addService.vue'
 export { default as AdminEditPosts } from '../../components/Admin/editPosts.vue'
-export { default as AppFoot } from '../../components/App/foot.vue'
-export { default as AppHead } from '../../components/App/head.vue'
-export { default as CarouselAbout } from '../../components/Carousel/about.vue'
-export { default as CarouselLaptopHead } from '../../components/Carousel/laptopHead.vue'
-export { default as CarouselMobileHead } from '../../components/Carousel/mobileHead.vue'
 export { default as DetailHead } from '../../components/Detail/head.vue'
 export { default as DetailMid } from '../../components/Detail/mid.vue'
 export { default as DetailSteps } from '../../components/Detail/steps.vue'
 export { default as DetailVideo } from '../../components/Detail/video.vue'
+export { default as CarouselAbout } from '../../components/Carousel/about.vue'
+export { default as CarouselLaptopHead } from '../../components/Carousel/laptopHead.vue'
+export { default as CarouselMobileHead } from '../../components/Carousel/mobileHead.vue'
+export { default as AppFoot } from '../../components/App/foot.vue'
+export { default as AppHead } from '../../components/App/head.vue'
+export { default as ModalsDeleteModal } from '../../components/Modals/DeleteModal.vue'
+export { default as ModalsEditModal } from '../../components/Modals/EditModal.vue'
+export { default as ModalsExistsModal } from '../../components/Modals/ExistsModal.vue'
+export { default as ModalsMultiUpload } from '../../components/Modals/MultiUpload.vue'
+export { default as ModalsSelectImageModal } from '../../components/Modals/SelectImageModal.vue'
+export { default as ModalsSelectImagesModal } from '../../components/Modals/SelectImagesModal.vue'
+export { default as ModalsSelectModal } from '../../components/Modals/SelectModal.vue'
+export { default as ModalsUploadModal } from '../../components/Modals/UploadModal.vue'
+export { default as ModalsManual } from '../../components/Modals/manual.vue'
 export { default as PostEditPosts } from '../../components/Post/EditPosts.vue'
 export { default as PostGallery } from '../../components/Post/Gallery.vue'
 export { default as PostImageUpload } from '../../components/Post/ImageUpload.vue'
@@ -34,15 +43,6 @@ export { default as ServiceMid } from '../../components/Service/mid.vue'
 export { default as ServiceRegCheck } from '../../components/Service/regCheck.vue'
 export { default as ServiceServices } from '../../components/Service/services.vue'
 export { default as ServiceType } from '../../components/Service/type.vue'
-export { default as ModalsDeleteModal } from '../../components/Modals/DeleteModal.vue'
-export { default as ModalsEditModal } from '../../components/Modals/EditModal.vue'
-export { default as ModalsExistsModal } from '../../components/Modals/ExistsModal.vue'
-export { default as ModalsMultiUpload } from '../../components/Modals/MultiUpload.vue'
-export { default as ModalsSelectImageModal } from '../../components/Modals/SelectImageModal.vue'
-export { default as ModalsSelectImagesModal } from '../../components/Modals/SelectImagesModal.vue'
-export { default as ModalsSelectModal } from '../../components/Modals/SelectModal.vue'
-export { default as ModalsUploadModal } from '../../components/Modals/UploadModal.vue'
-export { default as ModalsManual } from '../../components/Modals/manual.vue'
 export { default as UiCard } from '../../components/Ui/card.vue'
 export { default as UiEditor } from '../../components/Ui/editor.vue'
 export { default as UiMessage } from '../../components/Ui/message.vue'
@@ -52,15 +52,24 @@ export const LazyLogo = import('../../components/Logo.vue' /* webpackChunkName: 
 export const LazyAdminAddPost = import('../../components/Admin/addPost.vue' /* webpackChunkName: "components/admin-add-post" */).then(c => wrapFunctional(c.default || c))
 export const LazyAdminAddService = import('../../components/Admin/addService.vue' /* webpackChunkName: "components/admin-add-service" */).then(c => wrapFunctional(c.default || c))
 export const LazyAdminEditPosts = import('../../components/Admin/editPosts.vue' /* webpackChunkName: "components/admin-edit-posts" */).then(c => wrapFunctional(c.default || c))
-export const LazyAppFoot = import('../../components/App/foot.vue' /* webpackChunkName: "components/app-foot" */).then(c => wrapFunctional(c.default || c))
-export const LazyAppHead = import('../../components/App/head.vue' /* webpackChunkName: "components/app-head" */).then(c => wrapFunctional(c.default || c))
-export const LazyCarouselAbout = import('../../components/Carousel/about.vue' /* webpackChunkName: "components/carousel-about" */).then(c => wrapFunctional(c.default || c))
-export const LazyCarouselLaptopHead = import('../../components/Carousel/laptopHead.vue' /* webpackChunkName: "components/carousel-laptop-head" */).then(c => wrapFunctional(c.default || c))
-export const LazyCarouselMobileHead = import('../../components/Carousel/mobileHead.vue' /* webpackChunkName: "components/carousel-mobile-head" */).then(c => wrapFunctional(c.default || c))
 export const LazyDetailHead = import('../../components/Detail/head.vue' /* webpackChunkName: "components/detail-head" */).then(c => wrapFunctional(c.default || c))
 export const LazyDetailMid = import('../../components/Detail/mid.vue' /* webpackChunkName: "components/detail-mid" */).then(c => wrapFunctional(c.default || c))
 export const LazyDetailSteps = import('../../components/Detail/steps.vue' /* webpackChunkName: "components/detail-steps" */).then(c => wrapFunctional(c.default || c))
 export const LazyDetailVideo = import('../../components/Detail/video.vue' /* webpackChunkName: "components/detail-video" */).then(c => wrapFunctional(c.default || c))
+export const LazyCarouselAbout = import('../../components/Carousel/about.vue' /* webpackChunkName: "components/carousel-about" */).then(c => wrapFunctional(c.default || c))
+export const LazyCarouselLaptopHead = import('../../components/Carousel/laptopHead.vue' /* webpackChunkName: "components/carousel-laptop-head" */).then(c => wrapFunctional(c.default || c))
+export const LazyCarouselMobileHead = import('../../components/Carousel/mobileHead.vue' /* webpackChunkName: "components/carousel-mobile-head" */).then(c => wrapFunctional(c.default || c))
+export const LazyAppFoot = import('../../components/App/foot.vue' /* webpackChunkName: "components/app-foot" */).then(c => wrapFunctional(c.default || c))
+export const LazyAppHead = import('../../components/App/head.vue' /* webpackChunkName: "components/app-head" */).then(c => wrapFunctional(c.default || c))
+export const LazyModalsDeleteModal = import('../../components/Modals/DeleteModal.vue' /* webpackChunkName: "components/modals-delete-modal" */).then(c => wrapFunctional(c.default || c))
+export const LazyModalsEditModal = import('../../components/Modals/EditModal.vue' /* webpackChunkName: "components/modals-edit-modal" */).then(c => wrapFunctional(c.default || c))
+export const LazyModalsExistsModal = import('../../components/Modals/ExistsModal.vue' /* webpackChunkName: "components/modals-exists-modal" */).then(c => wrapFunctional(c.default || c))
+export const LazyModalsMultiUpload = import('../../components/Modals/MultiUpload.vue' /* webpackChunkName: "components/modals-multi-upload" */).then(c => wrapFunctional(c.default || c))
+export const LazyModalsSelectImageModal = import('../../components/Modals/SelectImageModal.vue' /* webpackChunkName: "components/modals-select-image-modal" */).then(c => wrapFunctional(c.default || c))
+export const LazyModalsSelectImagesModal = import('../../components/Modals/SelectImagesModal.vue' /* webpackChunkName: "components/modals-select-images-modal" */).then(c => wrapFunctional(c.default || c))
+export const LazyModalsSelectModal = import('../../components/Modals/SelectModal.vue' /* webpackChunkName: "components/modals-select-modal" */).then(c => wrapFunctional(c.default || c))
+export const LazyModalsUploadModal = import('../../components/Modals/UploadModal.vue' /* webpackChunkName: "components/modals-upload-modal" */).then(c => wrapFunctional(c.default || c))
+export const LazyModalsManual = import('../../components/Modals/manual.vue' /* webpackChunkName: "components/modals-manual" */).then(c => wrapFunctional(c.default || c))
 export const LazyPostEditPosts = import('../../components/Post/EditPosts.vue' /* webpackChunkName: "components/post-edit-posts" */).then(c => wrapFunctional(c.default || c))
 export const LazyPostGallery = import('../../components/Post/Gallery.vue' /* webpackChunkName: "components/post-gallery" */).then(c => wrapFunctional(c.default || c))
 export const LazyPostImageUpload = import('../../components/Post/ImageUpload.vue' /* webpackChunkName: "components/post-image-upload" */).then(c => wrapFunctional(c.default || c))
@@ -82,15 +91,6 @@ export const LazyServiceMid = import('../../components/Service/mid.vue' /* webpa
 export const LazyServiceRegCheck = import('../../components/Service/regCheck.vue' /* webpackChunkName: "components/service-reg-check" */).then(c => wrapFunctional(c.default || c))
 export const LazyServiceServices = import('../../components/Service/services.vue' /* webpackChunkName: "components/service-services" */).then(c => wrapFunctional(c.default || c))
 export const LazyServiceType = import('../../components/Service/type.vue' /* webpackChunkName: "components/service-type" */).then(c => wrapFunctional(c.default || c))
-export const LazyModalsDeleteModal = import('../../components/Modals/DeleteModal.vue' /* webpackChunkName: "components/modals-delete-modal" */).then(c => wrapFunctional(c.default || c))
-export const LazyModalsEditModal = import('../../components/Modals/EditModal.vue' /* webpackChunkName: "components/modals-edit-modal" */).then(c => wrapFunctional(c.default || c))
-export const LazyModalsExistsModal = import('../../components/Modals/ExistsModal.vue' /* webpackChunkName: "components/modals-exists-modal" */).then(c => wrapFunctional(c.default || c))
-export const LazyModalsMultiUpload = import('../../components/Modals/MultiUpload.vue' /* webpackChunkName: "components/modals-multi-upload" */).then(c => wrapFunctional(c.default || c))
-export const LazyModalsSelectImageModal = import('../../components/Modals/SelectImageModal.vue' /* webpackChunkName: "components/modals-select-image-modal" */).then(c => wrapFunctional(c.default || c))
-export const LazyModalsSelectImagesModal = import('../../components/Modals/SelectImagesModal.vue' /* webpackChunkName: "components/modals-select-images-modal" */).then(c => wrapFunctional(c.default || c))
-export const LazyModalsSelectModal = import('../../components/Modals/SelectModal.vue' /* webpackChunkName: "components/modals-select-modal" */).then(c => wrapFunctional(c.default || c))
-export const LazyModalsUploadModal = import('../../components/Modals/UploadModal.vue' /* webpackChunkName: "components/modals-upload-modal" */).then(c => wrapFunctional(c.default || c))
-export const LazyModalsManual = import('../../components/Modals/manual.vue' /* webpackChunkName: "components/modals-manual" */).then(c => wrapFunctional(c.default || c))
 export const LazyUiCard = import('../../components/Ui/card.vue' /* webpackChunkName: "components/ui-card" */).then(c => wrapFunctional(c.default || c))
 export const LazyUiEditor = import('../../components/Ui/editor.vue' /* webpackChunkName: "components/ui-editor" */).then(c => wrapFunctional(c.default || c))
 export const LazyUiMessage = import('../../components/Ui/message.vue' /* webpackChunkName: "components/ui-message" */).then(c => wrapFunctional(c.default || c))

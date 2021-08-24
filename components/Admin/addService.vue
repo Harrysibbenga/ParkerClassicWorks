@@ -12,7 +12,7 @@
               <PostImageUpload :image.sync="post.image" />
             </v-col>
             <v-col cols="6">
-              <PostImageUpload :image.sync="post.subimage" />
+              <PostImageUpload :image.sync="post.image_2" />
             </v-col>
           </v-row>
         </v-col>
@@ -64,6 +64,11 @@ export default {
     reset() {
       this.post = {
         image: {
+          id: '',
+          url: '',
+          alt: '',
+        },
+        image_2: {
           id: '',
           url: '',
           alt: '',

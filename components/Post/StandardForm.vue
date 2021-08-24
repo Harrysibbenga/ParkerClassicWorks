@@ -63,6 +63,21 @@
         <UiEditor :content.sync="postContent.content"></UiEditor>
       </v-col>
     </v-row>
+
+    <v-row v-if="content.type == 'career'">
+      <!-- title -->
+      <v-col cols="12" lg="6">
+        <v-text-field
+          v-model.trim="postContent.title"
+          label="Title"
+        ></v-text-field>
+      </v-col>
+      <!-- editor -->
+      <v-col cols="12">
+        <h3 class="pb-1">Main content</h3>
+        <UiEditor :content.sync="postContent.content"></UiEditor>
+      </v-col>
+    </v-row>
   </div>
 </template>
 
