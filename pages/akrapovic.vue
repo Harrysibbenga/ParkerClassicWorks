@@ -57,7 +57,7 @@ export default {
   data: () => ({
     detail: {
       head: {
-        url: 'akrapovic/4abb188a-f6bf-4274-8f81-5b8687addbda.png',
+        url: 'akrapovic/4abb188a-f6bf-4274-8f81-5b8687addbda.jpg',
         title: 'AKRAPOVIč',
       },
       mid: {

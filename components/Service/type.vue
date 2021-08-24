@@ -1,22 +1,21 @@
 <template>
   <v-container>
-    <v-row align="center" class="fill-height my-auto">
-      <v-col cols="12" class="text-center py-16">
-        <label for="services" class="text-h5 mx-auto"
-          >What service or services do you require ?</label
-        >
+    <v-row align="center" class="fill-height ma-auto flex-row" justify="center">
+      <v-col class="py-16">
         <v-select
           v-model="selectedServices"
           :items="items"
           name="services"
           multiple
           chips
-          label="Services"
-          class="white--text mt-4 mx-auto"
+          label="What services do you require ?"
+          class="white--text mt-4 ml-auto"
           solo
           dense
           style="width: 500px"
         ></v-select>
+      </v-col>
+      <v-col>
         <v-btn
           color="secondary"
           x-large
@@ -26,8 +25,8 @@
           >Confirm</v-btn
         >
       </v-col>
-      <ui-message :msg="msg"></ui-message>
     </v-row>
+    <ui-message :msg="msg"></ui-message>
   </v-container>
 </template>
 

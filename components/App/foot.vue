@@ -6,11 +6,11 @@
           <section-map></section-map>
         </v-col>
         <v-col id="contact" cols="12" class="secondary py-16">
-          <section-contact
+          <section-detail-contact
             class="py-16"
             :title="'GET IN TOUCH'"
             :map="true"
-          ></section-contact>
+          ></section-detail-contact>
         </v-col>
         <v-col cols="12" class="white">
           <section-partners></section-partners>

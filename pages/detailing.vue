@@ -37,7 +37,7 @@
       <detail-mid :mid="detail.bottom" />
     </v-col>
     <v-col cols="12" class="primary py-10">
-      <section-detail-contact
+      <section-contact
         :btn-color="btnColor"
         :title="title"
         :subject="subject"

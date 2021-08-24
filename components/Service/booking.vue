@@ -14,7 +14,7 @@
           :class="{ opacity: slide != 1 }"
         ></v-img>
       </v-col>
-      <v-col cols="4" class="service-section" @click="slide = 2">
+      <v-col cols="4" class="service-section" @click="checkDetails(2)">
         <v-img
           :src="require('../../assets/images/svg/three.svg')"
           :class="{ opacity: slide != 2 }"
@@ -24,10 +24,16 @@
     <transition mode="out-in" name="slide" class="row">
       <v-col v-if="slide === 0" cols="12">
         <keep-alive>
-          <service-reg-check
+          <!-- <service-reg-check
             :data.sync="formData.carDetails"
             :confirm.sync="confirmReg"
-          ></service-reg-check>
+          ></service-reg-check> -->
+
+          <service-api-check
+            :car-data.sync="formData.carDetails.carInfo"
+            :mot-data.sync="formData.carDetails.motInfo"
+            :confirm.sync="confirmReg"
+          ></service-api-check>
         </keep-alive>
       </v-col>
       <v-col v-if="slide === 1" cols="12">
@@ -54,10 +60,8 @@ export default {
       slide: 0,
       formData: {
         carDetails: {
-          reg: '',
-          make: '',
-          model: '',
-          year: '',
+          carInfo: {},
+          motInfo: {},
         },
         contact: {
           firstName: '',
@@ -90,6 +94,15 @@ export default {
           this.slide = 2
         }
       },
+    },
+  },
+  methods: {
+    checkDetails(slide) {
+      if (this.formData.carDetails.carInfo !== {}) {
+        return 'Nope'
+      } else {
+        this.slide = 2
+      }
     },
   },
 }

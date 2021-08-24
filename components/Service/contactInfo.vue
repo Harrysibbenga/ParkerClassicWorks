@@ -6,7 +6,7 @@
           <v-col cols="4">
             <label for="make" class="text-h5 mx-auto">Make:</label>
             <v-text-field
-              v-model="carDetails.make"
+              v-model="carDetails.carInfo.CarMake.CurrentTextValue"
               name="make"
               class="mt-4 mx-auto disabled-input"
               solo
@@ -18,7 +18,7 @@
           <v-col cols="4">
             <label for="model" class="text-h5 mx-auto">Model:</label>
             <v-text-field
-              v-model="carDetails.model"
+              v-model="carDetails.carInfo.CarModel.CurrentTextValue"
               name="model"
               class="mt-4 mx-auto disabled-input"
               solo
@@ -30,7 +30,7 @@
           <v-col cols="4">
             <label for="year" class="text-h5 mx-auto">Year:</label>
             <v-text-field
-              v-model="carDetails.year"
+              v-model="carDetails.carInfo.RegistrationYear"
               name="year"
               class="mt-4 mx-auto disabled-input"
               solo
