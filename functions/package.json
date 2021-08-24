@@ -28,7 +28,8 @@
     "jwt-decode": "^3.1.2",
     "nuxt-start": "^2.15.6",
     "vue-easy-lightbox": "^0.16.1",
-    "vuelidate": "^0.7.6"
+    "vuelidate": "^0.7.6",
+    "xmldom": "^0.6.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^6.0.0",

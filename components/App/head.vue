@@ -97,6 +97,10 @@ export default {
           link: '/trackstar',
           title: 'Trackstar',
         },
+        {
+          link: '/akrapovic',
+          title: 'Akrapovič',
+        },
       ],
     }
   },

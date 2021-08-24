@@ -24,6 +24,10 @@ export default {
           link: '/trackstar',
           url: 'partners/trackstar.svg',
         },
+        {
+          link: '/akrapovic',
+          url: 'partners/akrapovic.svg',
+        },
       ],
     }
   },

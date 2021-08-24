@@ -34,7 +34,6 @@ export default {
         url: 'https://firebasestorage.googleapis.com/v0/b/jhr-developments-c5bba.appspot.com/o/images%2Fimg-placeholder.png?alt=media&token=7d9c5978-d45d-4049-91d9-ceb235823db7',
         alt: 'Placeholder Image',
       },
-      type: 'image',
     }
   },
   computed: {
@@ -49,9 +48,9 @@ export default {
           alt: copy.alt,
         },
         image_2: {
-          id: copy.imgId,
-          url: copy.url,
-          alt: copy.alt,
+          id: copy.support.imgId,
+          url: copy.support.url,
+          alt: copy.support.alt,
         },
         content: {
           type: 'career',

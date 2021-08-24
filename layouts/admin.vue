@@ -13,6 +13,7 @@ export default {
   mounted() {
     this.$store.dispatch('images/setImages')
     this.$store.dispatch('posts/setPosts')
+    this.$store.dispatch('career/setContent')
   },
 }
 </script>

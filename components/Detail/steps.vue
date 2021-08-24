@@ -93,7 +93,7 @@ export default {
       side: null,
       items: [
         {
-          url: 'detail/Decontamination.png',
+          url: 'detail/02021000-01-SONAX-XTREME-Polish-Wax-3-Hybrid-NPT.png',
           title: 'Cleaning & decontamination',
           text: 'This consists of touchless decontamination with snow foam and pressure wash, touchless tar and removal, and touchless iron fallout removal. The wheels will be fully decontaminated with appropriate chemicals and the car will be pressure washed and hand washed using pH neutral products. The car is also treated with a clay bar as well. Once dried, it will then be moved into the detailing lab where the paint will be inspected. From here your vehicle will go through the stage process, dependent on your needs or requirements.',
         },
@@ -103,14 +103,14 @@ export default {
           text: 'Our stage one services involves giving your vehicle a once over with a fine machine polish, while stage two utilises both a medium and fine finish with a suitable brush and chemicals. If required, stage three involves a coarse polish, before the medium and fine levels from stages one and two, while stage four involves wet sand. This may only be minor in places, or it could be on whole panels to remove orange peel.',
         },
         {
-          url: 'detail/Serum-Protection.png',
-          title: 'Serum application',
-          text: 'On top of the polishing stages, there will be a serum application ranging from one to seven years, dependent on specific customer requirements, to help your car have a long-lasting showroom shine.',
+          url: 'detail/Decontamination.png',
+          title: 'Final sealing',
+          text: 'On top of the polishing stages, your car can be finished and protected with a quality wax, ceramic coating, or with paint protection film. Once work has been completed there will be a serum application ranging from one to seven years, dependent on specific customer requirements, so it leaves Parker Classic Works with a showroom finish and level of service that will leave your car looking its very best for years to come.',
         },
         {
           url: 'detail/Wax-Ceramic-PPF.png',
-          title: 'Final protection',
-          text: 'Once work has been completed, your car can be finished and protected with a quality wax, ceramic coating, or with paint protection film, so it leaves Parker ',
+          title: 'Finishing touches',
+          text: 'To complete the job, Parker Classic Works can provide necessary attention on areas such as the trim, lights, plastics, tyres, arches, plates, and so forth, so your bodywork isn’t the only part of your car that looks the part.',
         },
       ],
     }

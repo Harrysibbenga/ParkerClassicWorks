@@ -37,7 +37,7 @@
       <detail-mid :mid="detail.bottom" />
     </v-col>
     <v-col cols="12" class="primary py-10">
-      <section-contact
+      <section-detail-contact
         :btn-color="btnColor"
         :title="title"
         :subject="subject"
@@ -58,7 +58,7 @@ export default {
         url: 'detail/Polish.png',
       },
       bottom: {
-        url: 'detail/SONAX_XTREME.png',
+        url: 'detail/MGP03391.png',
       },
     },
     title:

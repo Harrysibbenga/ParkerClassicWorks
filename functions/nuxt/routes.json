@@ -9,87 +9,86 @@
         "name": "admin-articles",
         "path": "articles",
         "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/admin/articles.vue",
-        "chunkName": "pages/admin/articles",
-        "_name": "_2b5e8edc"
+        "chunkName": "pages/admin/articles"
+      },
+      {
+        "name": "admin-careers",
+        "path": "careers",
+        "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/admin/careers.vue",
+        "chunkName": "pages/admin/careers"
       },
       {
         "name": "admin-services",
         "path": "services",
         "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/admin/services.vue",
-        "chunkName": "pages/admin/services",
-        "_name": "_1746fe33"
+        "chunkName": "pages/admin/services"
       }
-    ],
-    "_name": "_c11c5b6c"
+    ]
   },
   {
     "name": "akrapovic",
     "path": "/akrapovic",
     "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/akrapovic.vue",
-    "chunkName": "pages/akrapovic",
-    "_name": "_0288b673"
+    "chunkName": "pages/akrapovic"
+  },
+  {
+    "name": "careers",
+    "path": "/careers",
+    "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/careers.vue",
+    "chunkName": "pages/careers"
   },
   {
     "name": "caterham",
     "path": "/caterham",
     "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/caterham.vue",
-    "chunkName": "pages/caterham",
-    "_name": "_3906eff4"
+    "chunkName": "pages/caterham"
   },
   {
     "name": "detailing",
     "path": "/detailing",
     "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/detailing.vue",
-    "chunkName": "pages/detailing",
-    "_name": "_45835328"
+    "chunkName": "pages/detailing"
   },
   {
     "name": "login",
     "path": "/login",
     "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/login.vue",
-    "chunkName": "pages/login",
-    "_name": "_37aa2164"
+    "chunkName": "pages/login"
   },
   {
     "name": "news",
     "path": "/news",
     "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/news.vue",
-    "chunkName": "pages/news",
-    "_name": "_26a0b7a8"
+    "chunkName": "pages/news"
   },
   {
     "name": "policy",
     "path": "/policy",
     "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/policy.vue",
-    "chunkName": "pages/policy",
-    "_name": "_f13ee172"
+    "chunkName": "pages/policy"
   },
   {
     "name": "porsche",
     "path": "/porsche",
     "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/porsche.vue",
-    "chunkName": "pages/porsche",
-    "_name": "_5a08ac4a"
+    "chunkName": "pages/porsche"
   },
   {
     "name": "trackstar",
     "path": "/trackstar",
     "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/trackstar.vue",
-    "chunkName": "pages/trackstar",
-    "_name": "_350f6898"
+    "chunkName": "pages/trackstar"
   },
   {
     "name": "article-slug",
     "path": "/article/:slug?",
     "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/article/_slug.vue",
-    "chunkName": "pages/article/_slug",
-    "_name": "_b50ebfa8"
+    "chunkName": "pages/article/_slug"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_6e027e4d"
+    "chunkName": "pages/index"
   }
 ]

@@ -19,6 +19,7 @@ let store = {};
   resolveStoreModules(require('../store/service/index.js'), 'service/index.js')
   resolveStoreModules(require('../store/posts/index.js'), 'posts/index.js')
   resolveStoreModules(require('../store/images/index.js'), 'images/index.js')
+  resolveStoreModules(require('../store/career/index.js'), 'career/index.js')
 
   // If the environment supports hot reloading...
 })()

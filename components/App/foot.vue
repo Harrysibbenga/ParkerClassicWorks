@@ -54,7 +54,9 @@
             style="width: 300px"
             class="mx-auto mt-10 mt-md-0"
           >
-            <a class="text-decoration-none white--text">Careers</a>
+            <nuxt-link class="text-decoration-none white--text" to="/careers"
+              >Careers
+            </nuxt-link>
             <v-divider vertical color="white"></v-divider>
             <nuxt-link class="text-decoration-none white--text" to="/policy"
               >Privacy Policy</nuxt-link
