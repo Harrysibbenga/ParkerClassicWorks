@@ -3,6 +3,13 @@ import { wrapFunctional } from './utils'
 
 const components = {
   Logo: () => import('../../components/Logo.vue' /* webpackChunkName: "components/logo" */).then(c => wrapFunctional(c.default || c)),
+  AppFoot: () => import('../../components/App/foot.vue' /* webpackChunkName: "components/app-foot" */).then(c => wrapFunctional(c.default || c)),
+  AppHead: () => import('../../components/App/head.vue' /* webpackChunkName: "components/app-head" */).then(c => wrapFunctional(c.default || c)),
+  AdminAddPost: () => import('../../components/Admin/addPost.vue' /* webpackChunkName: "components/admin-add-post" */).then(c => wrapFunctional(c.default || c)),
+  AdminAddService: () => import('../../components/Admin/addService.vue' /* webpackChunkName: "components/admin-add-service" */).then(c => wrapFunctional(c.default || c)),
+  AdminEditPosts: () => import('../../components/Admin/editPosts.vue' /* webpackChunkName: "components/admin-edit-posts" */).then(c => wrapFunctional(c.default || c)),
+  CareersHead: () => import('../../components/Careers/head.vue' /* webpackChunkName: "components/careers-head" */).then(c => wrapFunctional(c.default || c)),
+  CareersMid: () => import('../../components/Careers/mid.vue' /* webpackChunkName: "components/careers-mid" */).then(c => wrapFunctional(c.default || c)),
   CarouselAbout: () => import('../../components/Carousel/about.vue' /* webpackChunkName: "components/carousel-about" */).then(c => wrapFunctional(c.default || c)),
   CarouselLaptopHead: () => import('../../components/Carousel/laptopHead.vue' /* webpackChunkName: "components/carousel-laptop-head" */).then(c => wrapFunctional(c.default || c)),
   CarouselMobileHead: () => import('../../components/Carousel/mobileHead.vue' /* webpackChunkName: "components/carousel-mobile-head" */).then(c => wrapFunctional(c.default || c)),
@@ -40,15 +47,10 @@ const components = {
   ServiceRegCheck: () => import('../../components/Service/regCheck.vue' /* webpackChunkName: "components/service-reg-check" */).then(c => wrapFunctional(c.default || c)),
   ServiceServices: () => import('../../components/Service/services.vue' /* webpackChunkName: "components/service-services" */).then(c => wrapFunctional(c.default || c)),
   ServiceType: () => import('../../components/Service/type.vue' /* webpackChunkName: "components/service-type" */).then(c => wrapFunctional(c.default || c)),
-  AdminAddPost: () => import('../../components/Admin/addPost.vue' /* webpackChunkName: "components/admin-add-post" */).then(c => wrapFunctional(c.default || c)),
-  AdminAddService: () => import('../../components/Admin/addService.vue' /* webpackChunkName: "components/admin-add-service" */).then(c => wrapFunctional(c.default || c)),
-  AdminEditPosts: () => import('../../components/Admin/editPosts.vue' /* webpackChunkName: "components/admin-edit-posts" */).then(c => wrapFunctional(c.default || c)),
   UiCard: () => import('../../components/Ui/card.vue' /* webpackChunkName: "components/ui-card" */).then(c => wrapFunctional(c.default || c)),
   UiEditor: () => import('../../components/Ui/editor.vue' /* webpackChunkName: "components/ui-editor" */).then(c => wrapFunctional(c.default || c)),
   UiMessage: () => import('../../components/Ui/message.vue' /* webpackChunkName: "components/ui-message" */).then(c => wrapFunctional(c.default || c)),
-  UiMoreBtn: () => import('../../components/Ui/moreBtn.vue' /* webpackChunkName: "components/ui-more-btn" */).then(c => wrapFunctional(c.default || c)),
-  AppFoot: () => import('../../components/App/foot.vue' /* webpackChunkName: "components/app-foot" */).then(c => wrapFunctional(c.default || c)),
-  AppHead: () => import('../../components/App/head.vue' /* webpackChunkName: "components/app-head" */).then(c => wrapFunctional(c.default || c))
+  UiMoreBtn: () => import('../../components/Ui/moreBtn.vue' /* webpackChunkName: "components/ui-more-btn" */).then(c => wrapFunctional(c.default || c))
 }
 
 for (const name in components) {

@@ -12,10 +12,12 @@ const _0288b673 = () => interopDefault(import('../pages/akrapovic.vue' /* webpac
 const _96a7b020 = () => interopDefault(import('../pages/careers.vue' /* webpackChunkName: "pages/careers" */))
 const _3906eff4 = () => interopDefault(import('../pages/caterham.vue' /* webpackChunkName: "pages/caterham" */))
 const _45835328 = () => interopDefault(import('../pages/detailing.vue' /* webpackChunkName: "pages/detailing" */))
+const _44477a56 = () => interopDefault(import('../pages/hre.vue' /* webpackChunkName: "pages/hre" */))
 const _37aa2164 = () => interopDefault(import('../pages/login.vue' /* webpackChunkName: "pages/login" */))
 const _26a0b7a8 = () => interopDefault(import('../pages/news.vue' /* webpackChunkName: "pages/news" */))
 const _f13ee172 = () => interopDefault(import('../pages/policy.vue' /* webpackChunkName: "pages/policy" */))
 const _5a08ac4a = () => interopDefault(import('../pages/porsche.vue' /* webpackChunkName: "pages/porsche" */))
+const _aa8a2178 = () => interopDefault(import('../pages/sonax.vue' /* webpackChunkName: "pages/sonax" */))
 const _350f6898 = () => interopDefault(import('../pages/trackstar.vue' /* webpackChunkName: "pages/trackstar" */))
 const _b50ebfa8 = () => interopDefault(import('../pages/article/_slug.vue' /* webpackChunkName: "pages/article/_slug" */))
 const _6e027e4d = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
@@ -65,6 +67,10 @@ export const routerOptions = {
     component: _45835328,
     name: "detailing"
   }, {
+    path: "/hre",
+    component: _44477a56,
+    name: "hre"
+  }, {
     path: "/login",
     component: _37aa2164,
     name: "login"
@@ -80,6 +86,10 @@ export const routerOptions = {
     path: "/porsche",
     component: _5a08ac4a,
     name: "porsche"
+  }, {
+    path: "/sonax",
+    component: _aa8a2178,
+    name: "sonax"
   }, {
     path: "/trackstar",
     component: _350f6898,

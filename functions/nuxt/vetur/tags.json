@@ -2,6 +2,27 @@
   "Logo": {
     "description": "Auto imported from components/Logo.vue"
   },
+  "AppFoot": {
+    "description": "Auto imported from components/App/foot.vue"
+  },
+  "AppHead": {
+    "description": "Auto imported from components/App/head.vue"
+  },
+  "AdminAddPost": {
+    "description": "Auto imported from components/Admin/addPost.vue"
+  },
+  "AdminAddService": {
+    "description": "Auto imported from components/Admin/addService.vue"
+  },
+  "AdminEditPosts": {
+    "description": "Auto imported from components/Admin/editPosts.vue"
+  },
+  "CareersHead": {
+    "description": "Auto imported from components/Careers/head.vue"
+  },
+  "CareersMid": {
+    "description": "Auto imported from components/Careers/mid.vue"
+  },
   "CarouselAbout": {
     "description": "Auto imported from components/Carousel/about.vue"
   },
@@ -113,15 +134,6 @@
   "ServiceType": {
     "description": "Auto imported from components/Service/type.vue"
   },
-  "AdminAddPost": {
-    "description": "Auto imported from components/Admin/addPost.vue"
-  },
-  "AdminAddService": {
-    "description": "Auto imported from components/Admin/addService.vue"
-  },
-  "AdminEditPosts": {
-    "description": "Auto imported from components/Admin/editPosts.vue"
-  },
   "UiCard": {
     "description": "Auto imported from components/Ui/card.vue"
   },
@@ -133,11 +145,5 @@
   },
   "UiMoreBtn": {
     "description": "Auto imported from components/Ui/moreBtn.vue"
-  },
-  "AppFoot": {
-    "description": "Auto imported from components/App/foot.vue"
-  },
-  "AppHead": {
-    "description": "Auto imported from components/App/head.vue"
   }
 }

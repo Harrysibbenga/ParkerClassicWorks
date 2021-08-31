@@ -19,7 +19,7 @@
       <h2 class="text-h3">{{ career.title }}</h2>
       <hr style="width: 80%" class="mx-auto my-16" />
       <v-container class="text-center pb-16">
-        <div v-html="career.content"></div>
+        <div class="application_text" v-html="career.content"></div>
       </v-container>
     </v-col>
     <v-col v-if="career.title" cols="12">
@@ -30,33 +30,46 @@
 
 <script>
 export default {
-  computed: {
-    career() {
-      const data = this.$store.getters['career/getContent']
-
-      const career = {
+  data() {
+    return {
+      career: {
         head: {
-          url: data.url,
+          url: '',
           title: 'Careers',
-          alt: data.alt,
+          alt: '',
         },
         mid: {
-          url: data.support.url,
+          url: '',
         },
-        content: data.content,
-        title: data.title,
-      }
-      return career
+        content: '',
+        title: '',
+      },
+    }
+  },
+  computed: {
+    careerData() {
+      return this.$store.getters['career/getContent']
     },
   },
-  mounted() {
-    this.$store.dispatch('career/setContent')
+  beforeMount() {
+    this.career = {
+      head: {
+        url: this.careerData.url,
+        title: 'Careers',
+        alt: this.careerData.alt,
+      },
+      mid: {
+        url: this.careerData.support.url,
+      },
+      content: this.careerData.content,
+      title: this.careerData.title,
+    }
   },
 }
 </script>
 
-<style scoped lang="css">
-a {
-  color: #fff;
+<style>
+.application_text a {
+  color: #fff !important;
 }
 </style>

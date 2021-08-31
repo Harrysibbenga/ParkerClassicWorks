@@ -55,7 +55,7 @@
           color="secondary"
           x-large
           class="rounded-pill pa-md-6 mt-n3"
-          @click.native="confirm"
+          @click.native="getData"
           >Find a service</v-btn
         >
       </v-col>
@@ -93,6 +93,38 @@ export default {
     },
   },
   methods: {
+    getData() {
+      const url = 'http://127.0.0.1:5000/'
+
+      const params = new URLSearchParams()
+      params.append('registrationNumber', this.carInfo.reg)
+
+      const config = {
+        headers: {
+          'Content-Type': 'application/json',
+          Connection: 'keep-alive',
+          Accept: '*/*',
+          'Accept-Encoding': 'gzip, deflate, br',
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'POST',
+          'x-api-key': 'lRrH9VhM8Da1Efdy7IEhwapHw2lGhVqm2EmsHDuf',
+        },
+      }
+
+      this.$axios
+        .post(url, params, config)
+        .then((response) => {
+          console.log('carData -----> ', response.data)
+        })
+        .catch((error) => {
+          this.msg = {
+            type: 'error',
+            message: error.message,
+            status: true,
+          }
+          console.log(error)
+        })
+    },
     confirm() {
       if (this.carInfo.reg === '') {
         this.msg = {

@@ -33,7 +33,7 @@
                 :key="index"
                 :nuxt="true"
                 :to="item.link"
-                class="py-6"
+                class="py-3"
                 @click.native="close()"
               >
                 <v-list-item-title class="white--text text-h6 text-center">
@@ -44,10 +44,10 @@
                 v-if="user"
                 :nuxt="true"
                 to="/admin"
-                class="py-4"
+                class="py-3"
                 @click.native="close()"
               >
-                <v-list-item-title class="white--text text-h4 text-center">
+                <v-list-item-title class="white--text text-h6 text-center">
                   Admin
                 </v-list-item-title>
               </v-list-item>
@@ -100,6 +100,10 @@ export default {
         {
           link: '/akrapovic',
           title: 'Akrapovič',
+        },
+        {
+          link: '/hre',
+          title: 'HRE',
         },
       ],
     }

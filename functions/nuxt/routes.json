@@ -50,6 +50,12 @@
     "chunkName": "pages/detailing"
   },
   {
+    "name": "hre",
+    "path": "/hre",
+    "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/hre.vue",
+    "chunkName": "pages/hre"
+  },
+  {
     "name": "login",
     "path": "/login",
     "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/login.vue",
@@ -72,6 +78,12 @@
     "path": "/porsche",
     "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/porsche.vue",
     "chunkName": "pages/porsche"
+  },
+  {
+    "name": "sonax",
+    "path": "/sonax",
+    "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/sonax.vue",
+    "chunkName": "pages/sonax"
   },
   {
     "name": "trackstar",

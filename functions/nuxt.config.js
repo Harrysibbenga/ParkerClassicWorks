@@ -13,7 +13,28 @@ module.exports = {
       { hid: 'description', name: 'description', content: '' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    script: [{ src: 'https://apps.elfsight.com/p/platform.js', defer: true }],
+    script: [
+      { src: 'https://apps.elfsight.com/p/platform.js', defer: true },
+      {
+        hid: 'mailchimp1',
+        type: 'text/javascript',
+        src: '//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js',
+      },
+      {
+        hid: 'mailchimp2',
+        innerHTML: `
+        ;(function ($) {
+          window.fnames = new Array()
+          window.ftypes = new Array()
+          fnames[0] = 'EMAIL'
+          ftypes[0] = 'email'
+        })(jQuery)
+        var $mcj = jQuery.noConflict(true);
+        `,
+        type: 'text/javascript',
+        charset: 'utf-8',
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

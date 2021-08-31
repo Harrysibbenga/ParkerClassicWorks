@@ -98,9 +98,6 @@ export default {
         message: '',
         type: '',
       },
-      xml: '<?xml version="1.0" encoding="utf-8"?> <Vehicle xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://regcheck.org.uk"> <vehicleJson>{ "ABICode": "", "Description": "RENAULT CLIO DIESEL HATCHBACK - 1.5 dCi 90 Dynamique S MediaNav Energy 5dr", "RegistrationYear": "2014", "CarMake": { "CurrentTextValue": "RENAULT" }, "CarModel": { "CurrentTextValue": "CLIO DIESEL HATCHBACK - 1.5 dCi 90 Dynamique S MediaNav Energy 5dr" }, "BodyStyle": { "CurrentTextValue": "1.5 dCi 90 Dynamique S MediaNav Energy 5dr" }, "EngineSize": { "CurrentTextValue": "1500" }, "NumberOfDoors": { "CurrentTextValue": "5" }, "Transmission": { "CurrentTextValue": "Manual" }, "FuelType": { "CurrentTextValue": "Diesel" }, "MakeDescription": { "CurrentTextValue": "RENAULT" }, "ModelDescription": { "CurrentTextValue": "CLIO DIESEL HATCHBACK - 1.5 dCi 90 Dynamique S MediaNav Energy 5dr" }, "Immobiliser": { "CurrentTextValue": "" }, "NumberOfSeats": { "CurrentTextValue": "5" }, "IndicativeValue": { "CurrentTextValue": 0 }, "DriverSide": { "CurrentTextValue": "" }, "VehicleInsuranceGroup": 12, "VehicleInsuranceGroupOutOf": 20, "VehicleIdentificationNumber": "VF15RFL0H51334416", "EngineCode": "", "EngineNumber": "", "Colour": "Black", "ImageUrl": "https://www.regcheck.org.uk/image.aspx/@UkVOQVVMVCBDTElPIERJRVNFTCBIQVRDSEJBQ0sgLSAxLjUgZENpIDkwIER5bmFtaXF1ZSBTIE1lZGlhTmF2IEVuZXJneSA1ZHI=" }</vehicleJson> <vehicleData> <Description>RENAULT CLIO DIESEL HATCHBACK - 1.5 dCi 90 Dynamique S MediaNav Energy 5dr</Description> <RegistrationYear>2014</RegistrationYear> <CarMake> <CurrentTextValue>RENAULT</CurrentTextValue> </CarMake> <BodyStyle> <CurrentTextValue>1.5 dCi 90 Dynamique S MediaNav Energy 5dr</CurrentTextValue> </BodyStyle> <EngineSize> <CurrentValue>1500</CurrentValue> </EngineSize> <NumberOfDoors> <CurrentValue>5</CurrentValue> </NumberOfDoors> <Transmission> <CurrentTextValue>Manual</CurrentTextValue> </Transmission> <FuelType> <CurrentTextValue>Diesel</CurrentTextValue> </FuelType> <MakeDescription>RENAULT</MakeDescription> <ModelDescription>CLIO DIESEL HATCHBACK - 1.5 dCi 90 Dynamique S MediaNav Energy 5dr</ModelDescription> </vehicleData> </Vehicle>',
-      motxml:
-        '<?xml version="1.0" encoding="utf-8"?> <UKMOTData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://regcheck.org.uk"> <Tests> <UKTest> <TestDate>2021.07.20 10:12:36</TestDate> <ExpiryDate>2022.07.19</ExpiryDate> <Result>Pass</Result> <Odometer>44097</Odometer> <TestNumber>937810951043</TestNumber> <FailureReasons /> <Advisories /> </UKTest> <UKTest> <TestDate>2020.08.28 09:54:09</TestDate> <ExpiryDate>2021.09.10</ExpiryDate> <Result>Pass</Result> <Odometer>41631</Odometer> <TestNumber>281294026288</TestNumber> <FailureReasons /> <Advisories /> </UKTest> <UKTest> <TestDate>2019.09.04 13:13:17</TestDate> <ExpiryDate>2020.09.10</ExpiryDate> <Result>Pass</Result> <Odometer>34723</Odometer> <TestNumber>297344345308</TestNumber> <FailureReasons /> <Advisories /> </UKTest> <UKTest> <TestDate>2018.09.11 09:09:56</TestDate> <ExpiryDate>2019.09.10</ExpiryDate> <Result>Pass</Result> <Odometer>24381</Odometer> <TestNumber>234807990664</TestNumber> <FailureReasons /> <Advisories /> </UKTest> </Tests> <taxDate>01 Sep 2021</taxDate> <Json>[ { "TestDate": "2021.07.20 10:12:36", "ExpiryDate": "2022.07.19", "Result": "Pass", "Odometer": "44097", "TestNumber": "937810951043", "FailureReasons": [], "Advisories": [] }, { "TestDate": "2020.08.28 09:54:09", "ExpiryDate": "2021.09.10", "Result": "Pass", "Odometer": "41631", "TestNumber": "281294026288", "FailureReasons": [], "Advisories": [] }, { "TestDate": "2019.09.04 13:13:17", "ExpiryDate": "2020.09.10", "Result": "Pass", "Odometer": "34723", "TestNumber": "297344345308", "FailureReasons": [], "Advisories": [] }, { "TestDate": "2018.09.11 09:09:56", "ExpiryDate": "2019.09.10", "Result": "Pass", "Odometer": "24381", "TestNumber": "234807990664", "FailureReasons": [], "Advisories": [] } ]</Json> <ExtendedInformation> <ArrayOfString> <string>make</string> <string>RENAULT</string> </ArrayOfString> <ArrayOfString> <string>model</string> <string /> </ArrayOfString> <ArrayOfString> <string>registration</string> <string>01 Sep 2014</string> </ArrayOfString> <ArrayOfString> <string>(cc)</string> <string>1461cc</string> </ArrayOfString> <ArrayOfString> <string>Emissions</string> <string>90 g/km</string> </ArrayOfString> <ArrayOfString> <string>type</string> <string>Car</string> </ArrayOfString> <ArrayOfString> <string>marker</string> <string /> </ArrayOfString> <ArrayOfString> <string>status</string> <string>Taxed</string> </ArrayOfString> <ArrayOfString> <string>colour</string> <string>BLACK</string> </ArrayOfString> <ArrayOfString> <string>approval</string> <string>M1</string> </ArrayOfString> <ArrayOfString> <string>weight</string> <string>Not available</string> </ArrayOfString> </ExtendedInformation> <ExtendedInformationJson>[ [ "make", "RENAULT" ], [ "model", "" ], [ "registration", "01 Sep 2014" ], [ "(cc)", "1461cc" ],[ "Emissions", "90 g/km" ],[ "type", "Car" ], [ "marker", "" ], [ "status", "Taxed" ], [ "colour", "BLACK" ], [ "approval", "M1" ], [ "weight", "Not available" ] ]</ExtendedInformationJson> </UKMOTData>',
     }
   },
   computed: {
@@ -133,6 +130,12 @@ export default {
   },
   methods: {
     getReg(carInfo, motInfo, reg) {
+      this.msg = {
+        type: 'info',
+        message: 'Fetching vehicle information please wait...',
+        status: true,
+      }
+
       const url = 'http://www.regcheck.org.uk/api/reg.asmx/Check'
 
       const params = new URLSearchParams()
@@ -177,6 +180,7 @@ export default {
               this.motInfo = mot
               console.log('MotData -----> ', this.motInfo)
               this.view = true
+              this.msg.status = false
             })
             .catch((error) => {
               this.msg = {

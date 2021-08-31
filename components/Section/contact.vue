@@ -91,6 +91,7 @@
 </template>
 
 <script>
+import { emailData } from '@/services/firebase'
 import { validationMixin } from 'vuelidate'
 import { required, maxLength, email } from 'vuelidate/lib/validators'
 import emailjs from 'emailjs-com'
@@ -212,6 +213,7 @@ export default {
         if (this.services !== []) {
           templateParams.services = this.services
         }
+        this.save()
         this.sendEmail(templateParams)
       }
     },
@@ -243,14 +245,27 @@ export default {
           this.reset()
         })
     },
+    save() {
+      emailData
+        .add({
+          fname: this.fname,
+          lname: this.lname,
+          email: this.email,
+          services: this.services,
+          message: this.message,
+          carInfo: this.carDetails.carInfo,
+          motInfo: this.carDetails.motInfo,
+        })
+        .catch((err) => {
+          console.log(err)
+        })
+    },
     clear() {
       this.reset()
       this.msg = {
         type: '',
         message: '',
       }
-      this.$emit('update:carDetails', {})
-      this.$emit('update:services', [])
     },
     reset() {
       this.$v.$reset()
