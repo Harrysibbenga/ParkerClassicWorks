@@ -13,9 +13,9 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_7085cc1b from 'nuxt_plugin_plugin_7085cc1b' // Source: ./components/plugin.js (mode: 'all')
-import nuxt_plugin_plugin_e729349a from 'nuxt_plugin_plugin_e729349a' // Source: ./vuetify/plugin.js (mode: 'all')
-import nuxt_plugin_axios_03bd07b1 from 'nuxt_plugin_axios_03bd07b1' // Source: ./axios.js (mode: 'all')
+import nuxt_plugin_plugin_65a2114e from 'nuxt_plugin_plugin_65a2114e' // Source: ./components/plugin.js (mode: 'all')
+import nuxt_plugin_plugin_6e696560 from 'nuxt_plugin_plugin_6e696560' // Source: ./vuetify/plugin.js (mode: 'all')
+import nuxt_plugin_axios_38c94164 from 'nuxt_plugin_axios_38c94164' // Source: ./axios.js (mode: 'all')
 import nuxt_plugin_vueeasylightbox_38d21d18 from 'nuxt_plugin_vueeasylightbox_38d21d18' // Source: ../plugins/vue-easy-lightbox.js (mode: 'client')
 
 // Component: <ClientOnly>
@@ -84,7 +84,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"titleTemplate":"%s - ParkerClassicWorks","title":"PCW","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Roboto:100,300,400,500,700,900&display=swap"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002F@mdi\u002Ffont@latest\u002Fcss\u002Fmaterialdesignicons.min.css"}],"script":[{"src":"https:\u002F\u002Fapps.elfsight.com\u002Fp\u002Fplatform.js","defer":true},{"hid":"mailchimp1","type":"text\u002Fjavascript","src":"\u002F\u002Fs3.amazonaws.com\u002Fdownloads.mailchimp.com\u002Fjs\u002Fmc-validate.js"},{"hid":"mailchimp2","innerHTML":"\n        ;(function($) {\n          window.fnames = new Array()\n          window.ftypes = new Array()\n          fnames[0] = 'EMAIL'\n          ftypes[0] = 'email'\n        })(jQuery)\n        var $mcj = jQuery.noConflict(true);\n        ","type":"text\u002Fjavascript","charset":"utf-8"}],"style":[]},
+    head: {"titleTemplate":"%s - ParkerClassicWorks","title":"PCW","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Parker Classic Works is Precision. Delivered. PCW is a brand-new restoration and servicing centre in the Midlands. It has a particular focus on Caterham and Porsche servicing, but all marques are catered for, with experienced Porsche mechanics utilising the skill and knowledge of Team Parker Racing’s almost quarter of a century of success competing with Porsche, Caterham, and other prestige manufacturers."},{"hid":"og-type","property":"og:type","content":"website"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Roboto:100,300,400,500,700,900&display=swap"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002F@mdi\u002Ffont@latest\u002Fcss\u002Fmaterialdesignicons.min.css"}],"script":[{"src":"https:\u002F\u002Fapps.elfsight.com\u002Fp\u002Fplatform.js","defer":true},{"hid":"mailchimp1","type":"text\u002Fjavascript","src":"\u002F\u002Fs3.amazonaws.com\u002Fdownloads.mailchimp.com\u002Fjs\u002Fmc-validate.js"},{"hid":"mailchimp2","innerHTML":"\n        ;(function($) {\n          window.fnames = new Array()\n          window.ftypes = new Array()\n          fnames[0] = 'EMAIL'\n          ftypes[0] = 'email'\n        })(jQuery)\n        var $mcj = jQuery.noConflict(true);\n        ","type":"text\u002Fjavascript","charset":"utf-8"},{"src":"https:\u002F\u002Fwww.googletagmanager.com\u002Fgtag\u002Fjs?id=G-6JHHPG2VWN","async":true},{"hid":"gtag","innerHTML":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n\n          gtag('config', 'G-6JHHPG2VWN');\n        ","type":"text\u002Fjavascript","charset":"utf-8"}],"style":[]},
 
     store,
     router,
@@ -213,16 +213,16 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_7085cc1b === 'function') {
-    await nuxt_plugin_plugin_7085cc1b(app.context, inject)
+  if (typeof nuxt_plugin_plugin_65a2114e === 'function') {
+    await nuxt_plugin_plugin_65a2114e(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_plugin_e729349a === 'function') {
-    await nuxt_plugin_plugin_e729349a(app.context, inject)
+  if (typeof nuxt_plugin_plugin_6e696560 === 'function') {
+    await nuxt_plugin_plugin_6e696560(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_03bd07b1 === 'function') {
-    await nuxt_plugin_axios_03bd07b1(app.context, inject)
+  if (typeof nuxt_plugin_axios_38c94164 === 'function') {
+    await nuxt_plugin_axios_38c94164(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_vueeasylightbox_38d21d18 === 'function') {

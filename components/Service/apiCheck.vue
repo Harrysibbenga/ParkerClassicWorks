@@ -69,9 +69,9 @@
               >Find a service</v-btn
             >
           </v-col>
-          <ui-message :msg="msg"></ui-message>
         </v-row>
       </v-col>
+      <ui-message :msg="msg"></ui-message>
     </v-row>
   </v-container>
 </template>
@@ -207,14 +207,14 @@ export default {
     convertMotXML(xml) {
       const doc = new DOMParser().parseFromString(xml)
       const nodes = doc.lastChild.childNodes
-      const tests = JSON.parse(nodes[5].firstChild.data)
+      const history = JSON.parse(nodes[5].firstChild.data)
       const taxDate = nodes[3].firstChild.data
-      const extrainfo = JSON.parse(nodes[9].firstChild.data)
+      const extraInfo = JSON.parse(nodes[9].firstChild.data)
 
       const data = {
-        tests,
+        history,
         taxDate,
-        extrainfo,
+        extraInfo,
       }
 
       return data

@@ -3,11 +3,11 @@ import { wrapFunctional } from './utils'
 
 const components = {
   Logo: () => import('../../components/Logo.vue' /* webpackChunkName: "components/logo" */).then(c => wrapFunctional(c.default || c)),
-  AppFoot: () => import('../../components/App/foot.vue' /* webpackChunkName: "components/app-foot" */).then(c => wrapFunctional(c.default || c)),
-  AppHead: () => import('../../components/App/head.vue' /* webpackChunkName: "components/app-head" */).then(c => wrapFunctional(c.default || c)),
   AdminAddPost: () => import('../../components/Admin/addPost.vue' /* webpackChunkName: "components/admin-add-post" */).then(c => wrapFunctional(c.default || c)),
   AdminAddService: () => import('../../components/Admin/addService.vue' /* webpackChunkName: "components/admin-add-service" */).then(c => wrapFunctional(c.default || c)),
   AdminEditPosts: () => import('../../components/Admin/editPosts.vue' /* webpackChunkName: "components/admin-edit-posts" */).then(c => wrapFunctional(c.default || c)),
+  AppFoot: () => import('../../components/App/foot.vue' /* webpackChunkName: "components/app-foot" */).then(c => wrapFunctional(c.default || c)),
+  AppHead: () => import('../../components/App/head.vue' /* webpackChunkName: "components/app-head" */).then(c => wrapFunctional(c.default || c)),
   CareersHead: () => import('../../components/Careers/head.vue' /* webpackChunkName: "components/careers-head" */).then(c => wrapFunctional(c.default || c)),
   CareersMid: () => import('../../components/Careers/mid.vue' /* webpackChunkName: "components/careers-mid" */).then(c => wrapFunctional(c.default || c)),
   CarouselAbout: () => import('../../components/Carousel/about.vue' /* webpackChunkName: "components/carousel-about" */).then(c => wrapFunctional(c.default || c)),

@@ -1,16 +1,8 @@
 <template>
   <v-container>
-    <v-row align="center" style="max-height: 500px">
+    <v-row align="center" style="min-height: 300px">
       <v-col v-for="(item, i) in items" :key="i">
-        <a v-if="i == 1" :href="item.link" target="_blank">
-          <v-img
-            :src="require('../../assets/images/' + item.url)"
-            :max-height="150"
-            :max-width="300"
-            class="mx-auto my-10"
-          ></v-img>
-        </a>
-        <nuxt-link v-else :to="item.link">
+        <nuxt-link :to="item.link">
           <v-img
             :src="require('../../assets/images/' + item.url)"
             :max-height="150"
@@ -30,15 +22,19 @@ export default {
       items: [
         {
           link: '/trackstar',
-          url: 'partners/trackstar.svg',
+          url: 'partners/Trackstar Logo.png',
         },
         {
-          link: 'https://www.sonax.com/',
-          url: 'partners/sonax.png',
+          link: '/detailing',
+          url: 'partners/SONAX Logo.png',
+        },
+        {
+          link: '/hre',
+          url: 'partners/HRE Logo.png',
         },
         {
           link: '/akrapovic',
-          url: 'partners/akrapovic.svg',
+          url: 'partners/Akrapovic Logo.png',
         },
       ],
     }

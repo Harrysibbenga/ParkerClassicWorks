@@ -10,7 +10,13 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Parker Classic Works is Precision. Delivered. PCW is a brand-new restoration and servicing centre in the Midlands. It has a particular focus on Caterham and Porsche servicing, but all marques are catered for, with experienced Porsche mechanics utilising the skill and knowledge of Team Parker Racing’s almost quarter of a century of success competing with Porsche, Caterham, and other prestige manufacturers.',
+      },
+      { hid: 'og-type', property: 'og:type', content: 'website' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
@@ -34,8 +40,26 @@ module.exports = {
         type: 'text/javascript',
         charset: 'utf-8',
       },
+      {
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-6JHHPG2VWN',
+        async: true,
+      },
+      {
+        hid: 'gtag',
+        innerHTML: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-6JHHPG2VWN');
+        `,
+        type: 'text/javascript',
+        charset: 'utf-8',
+      },
     ],
   },
+
+  ssr: true,
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: ['~/assets/scss/main.scss'],

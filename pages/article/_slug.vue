@@ -81,7 +81,7 @@
 
 <script>
 import { filter } from '@/mixins/filter'
-import { cloneDeep } from 'lodash'
+import cloneDeep from 'lodash/cloneDeep'
 export default {
   name: 'Post',
   mixins: [filter],
@@ -94,43 +94,62 @@ export default {
       images: [],
     }
   },
+  async fetch({ store, route }) {
+    this.slug = route.params.slug
+    await store.dispatch('posts/setPostSlug', this.slug)
+  },
   head() {
+    const post = this.$store.getters['posts/getPost']
     return {
-      title: this.post.title,
+      title: post.title,
       meta: [
         {
+          hid: 't-type',
+          name: 'twitter:card',
+          content: 'summary_large_image',
+        },
+        {
+          hid: 't-type',
+          name: 'twitter:site',
+          content: '@parkerclassicworks',
+        },
+        {
+          hid: 'og-title',
           property: 'og:title',
-          content: this.post.title,
+          content: post.title,
         },
         {
+          hid: 'og-desc',
           property: 'og:description',
-          content: this.post.excerpt,
+          content: post.excerpt,
         },
         {
+          hid: 'og-url',
           property: 'og:url',
-          content: 'https://parkerclassicworks.com/' + this.slug,
+          content: 'https://parkerclassicworks.com/article/' + this.slug,
         },
         {
+          hid: 'og-image',
           property: 'og:image',
-          content: this.post.url,
+          content: post.url,
         },
         {
+          hid: 'og-site_name',
           property: 'og:site_name',
           content: 'Parker Classic Works | Official Website',
         },
-        { property: 'og:type', content: 'post' },
-        { name: 'robots', content: 'index,follow' },
+        { hid: 'og-type', property: 'og:type', content: 'website' },
         {
           hid: 'description',
           name: 'description',
-          content: this.post.excerpt,
+          content: post.excerpt,
         },
       ],
     }
   },
   created() {
-    const slug = this.$route.params.slug
-    this.$store.dispatch('posts/setPostSlug', slug).then((data) => {
+    this.slug = this.$route.params.slug
+    this.$store.dispatch('posts/setPostSlug', this.slug).then((data) => {
       this.post = cloneDeep(data)
       if (this.post.gallery.length === 0) {
         this.post.gallery = null

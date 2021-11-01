@@ -94,7 +94,6 @@
 import { emailData } from '@/services/firebase'
 import { validationMixin } from 'vuelidate'
 import { required, maxLength, email } from 'vuelidate/lib/validators'
-import emailjs from 'emailjs-com'
 
 export default {
   mixins: [validationMixin],
@@ -191,6 +190,7 @@ export default {
           type: 'info',
           message: 'Sending ...',
         }
+
         const templateParams = {
           fname: this.fname,
           lname: this.lname,
@@ -198,52 +198,13 @@ export default {
           message: this.message,
           email: this.email,
           subject: this.subject,
+          carDetails: this.carDetails,
+          services: this.services,
         }
 
-        if (this.carDetails !== {}) {
-          templateParams.make = this.carDetails.carInfo.CarMake.CurrentTextValue
-          templateParams.model =
-            this.carDetails.carInfo.CarModel.CurrentTextValue
-          templateParams.reg = this.carDetails.carInfo.reg
-          templateParams.year = this.carDetails.carInfo.RegistrationYear
-          templateParams.tax = this.carDetails.motInfo.taxDate
-          templateParams.history = this.carDetails.motInfo.tests
-        }
-
-        if (this.services !== []) {
-          templateParams.services = this.services
-        }
         this.save()
-        this.sendEmail(templateParams)
+        this.generatePDFSendEmail(templateParams)
       }
-    },
-    sendEmail(params) {
-      emailjs
-        .send(
-          'service_mqk22oq',
-          'pcw_template_ac3abx9',
-          params,
-          'user_nzDfhN2MWfSPkCKqEp7Td'
-        )
-        .then(
-          (result) => {
-            console.log('SUCCESS!', result.status, result.text)
-            this.msg = {
-              type: 'success',
-              message: 'Message sent someone will be in touch shortly',
-            }
-          },
-          (error) => {
-            console.log('FAILED...', error)
-            this.msg = {
-              type: 'error',
-              message: error,
-            }
-          }
-        )
-        .then(() => {
-          this.reset()
-        })
     },
     save() {
       emailData
@@ -253,11 +214,50 @@ export default {
           email: this.email,
           services: this.services,
           message: this.message,
-          carInfo: this.carDetails.carInfo,
-          motInfo: this.carDetails.motInfo,
+          carInfo: {
+            make: this.carDetails.carInfo.CarMake.CurrentTextValue,
+            model: this.carDetails.carInfo.CarModel.CurrentTextValue,
+            reg: this.carDetails.carInfo.reg,
+            year: this.carDetails.carInfo.RegistrationYear,
+          },
+          motInfo: {
+            history: this.carDetails.motInfo.history,
+            taxDate: this.carDetails.motInfo.taxDate,
+          },
         })
         .catch((err) => {
           console.log(err)
+          this.msg = {
+            type: 'error',
+            message: err.message,
+          }
+        })
+    },
+    generatePDFSendEmail(custData) {
+      const url = 'https://pdf-creator.herokuapp.com/create_pdf'
+
+      const config = {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      }
+
+      this.$axios
+        .post(url, JSON.stringify(custData), config)
+        .then((response) => {
+          console.log('Data -----> ', JSON.stringify(custData))
+          console.log(response.data)
+          this.msg = {
+            type: 'succses',
+            message: 'Message Sent, Someone will be in touch soon',
+          }
+          this.reset()
+        })
+        .catch((err) => {
+          this.msg = {
+            type: 'error',
+            message: err.message,
+          }
         })
     },
     clear() {

@@ -105,7 +105,7 @@ export default {
         {
           url: 'detail/Decontamination.png',
           title: 'Final sealing',
-          text: 'On top of the polishing stages, your car can be finished and protected with a quality wax, ceramic coating, or with paint protection film. Once work has been completed there will be a serum application ranging from one to seven years, dependent on specific customer requirements, so it leaves Parker Classic Works with a showroom finish and level of service that will leave your car looking its very best for years to come.',
+          text: 'On top of the polishing stages, your car can be finished and protected with a quality wax, ceramic coating, or with paint protection film. Once work has been completed there will be a serum application ranging from one to seven years, dependent on specific customer requirements, so it leaves Parker Classic Works with a finish better than it had in the showroom and level of service that will leave your car looking its very best for years to come.',
         },
         {
           url: 'detail/Wax-Ceramic-PPF.png',

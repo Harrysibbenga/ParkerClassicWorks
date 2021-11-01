@@ -2,12 +2,6 @@
   "Logo": {
     "description": "Auto imported from components/Logo.vue"
   },
-  "AppFoot": {
-    "description": "Auto imported from components/App/foot.vue"
-  },
-  "AppHead": {
-    "description": "Auto imported from components/App/head.vue"
-  },
   "AdminAddPost": {
     "description": "Auto imported from components/Admin/addPost.vue"
   },
@@ -16,6 +10,12 @@
   },
   "AdminEditPosts": {
     "description": "Auto imported from components/Admin/editPosts.vue"
+  },
+  "AppFoot": {
+    "description": "Auto imported from components/App/foot.vue"
+  },
+  "AppHead": {
+    "description": "Auto imported from components/App/head.vue"
   },
   "CareersHead": {
     "description": "Auto imported from components/Careers/head.vue"

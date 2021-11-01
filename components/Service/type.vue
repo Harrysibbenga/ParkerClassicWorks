@@ -15,7 +15,7 @@
           style="width: 500px"
         ></v-select>
       </v-col>
-      <v-col>
+      <v-col class="text-center">
         <v-btn
           color="secondary"
           x-large

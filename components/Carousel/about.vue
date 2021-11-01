@@ -56,13 +56,7 @@
           </v-col>
           <v-col cols="12" md="6">
             <v-responsive
-              class="
-                about-content
-                primary
-                white--text
-                overflow-y-auto
-                primary--text
-              "
+              class="about-content primary white--text overflow-y-auto"
             >
               <v-card-title>
                 <h2 class="text-md-h4 text-center mx-auto">{{ item.title }}</h2>

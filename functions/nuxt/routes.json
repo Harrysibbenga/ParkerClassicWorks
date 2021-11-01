@@ -2,105 +2,122 @@
   {
     "name": "admin",
     "path": "/admin",
-    "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/admin.vue",
+    "component": "/Volumes/Extreme SSD/Websites/PCW/pcw-webapp/pages/admin.vue",
     "chunkName": "pages/admin",
     "children": [
       {
         "name": "admin-articles",
         "path": "articles",
-        "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/admin/articles.vue",
-        "chunkName": "pages/admin/articles"
+        "component": "/Volumes/Extreme SSD/Websites/PCW/pcw-webapp/pages/admin/articles.vue",
+        "chunkName": "pages/admin/articles",
+        "_name": "_4812ae85"
       },
       {
         "name": "admin-careers",
         "path": "careers",
-        "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/admin/careers.vue",
-        "chunkName": "pages/admin/careers"
+        "component": "/Volumes/Extreme SSD/Websites/PCW/pcw-webapp/pages/admin/careers.vue",
+        "chunkName": "pages/admin/careers",
+        "_name": "_e14a3ac6"
       },
       {
         "name": "admin-services",
         "path": "services",
-        "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/admin/services.vue",
-        "chunkName": "pages/admin/services"
+        "component": "/Volumes/Extreme SSD/Websites/PCW/pcw-webapp/pages/admin/services.vue",
+        "chunkName": "pages/admin/services",
+        "_name": "_7508f426"
       }
-    ]
+    ],
+    "_name": "_0beccef7"
   },
   {
     "name": "akrapovic",
     "path": "/akrapovic",
-    "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/akrapovic.vue",
-    "chunkName": "pages/akrapovic"
+    "component": "/Volumes/Extreme SSD/Websites/PCW/pcw-webapp/pages/akrapovic.vue",
+    "chunkName": "pages/akrapovic",
+    "_name": "_eaa8d6c0"
   },
   {
     "name": "careers",
     "path": "/careers",
-    "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/careers.vue",
-    "chunkName": "pages/careers"
+    "component": "/Volumes/Extreme SSD/Websites/PCW/pcw-webapp/pages/careers.vue",
+    "chunkName": "pages/careers",
+    "_name": "_234aa546"
   },
   {
     "name": "caterham",
     "path": "/caterham",
-    "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/caterham.vue",
-    "chunkName": "pages/caterham"
+    "component": "/Volumes/Extreme SSD/Websites/PCW/pcw-webapp/pages/caterham.vue",
+    "chunkName": "pages/caterham",
+    "_name": "_40c29f8e"
   },
   {
     "name": "detailing",
     "path": "/detailing",
-    "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/detailing.vue",
-    "chunkName": "pages/detailing"
+    "component": "/Volumes/Extreme SSD/Websites/PCW/pcw-webapp/pages/detailing.vue",
+    "chunkName": "pages/detailing",
+    "_name": "_65613499"
   },
   {
     "name": "hre",
     "path": "/hre",
-    "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/hre.vue",
-    "chunkName": "pages/hre"
+    "component": "/Volumes/Extreme SSD/Websites/PCW/pcw-webapp/pages/hre.vue",
+    "chunkName": "pages/hre",
+    "_name": "_5ec3be43"
   },
   {
     "name": "login",
     "path": "/login",
-    "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/login.vue",
-    "chunkName": "pages/login"
+    "component": "/Volumes/Extreme SSD/Websites/PCW/pcw-webapp/pages/login.vue",
+    "chunkName": "pages/login",
+    "_name": "_b7b5c3de"
   },
   {
     "name": "news",
     "path": "/news",
-    "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/news.vue",
-    "chunkName": "pages/news"
+    "component": "/Volumes/Extreme SSD/Websites/PCW/pcw-webapp/pages/news.vue",
+    "chunkName": "pages/news",
+    "_name": "_5bacf15b"
   },
   {
     "name": "policy",
     "path": "/policy",
-    "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/policy.vue",
-    "chunkName": "pages/policy"
+    "component": "/Volumes/Extreme SSD/Websites/PCW/pcw-webapp/pages/policy.vue",
+    "chunkName": "pages/policy",
+    "_name": "_ab75af8c"
   },
   {
     "name": "porsche",
     "path": "/porsche",
-    "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/porsche.vue",
-    "chunkName": "pages/porsche"
+    "component": "/Volumes/Extreme SSD/Websites/PCW/pcw-webapp/pages/porsche.vue",
+    "chunkName": "pages/porsche",
+    "_name": "_0caa2f48"
   },
   {
     "name": "sonax",
     "path": "/sonax",
-    "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/sonax.vue",
-    "chunkName": "pages/sonax"
+    "component": "/Volumes/Extreme SSD/Websites/PCW/pcw-webapp/pages/sonax.vue",
+    "chunkName": "pages/sonax",
+    "_name": "_1735ebf1"
   },
   {
     "name": "trackstar",
     "path": "/trackstar",
-    "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/trackstar.vue",
-    "chunkName": "pages/trackstar"
+    "component": "/Volumes/Extreme SSD/Websites/PCW/pcw-webapp/pages/trackstar.vue",
+    "chunkName": "pages/trackstar",
+    "_name": "_859b7276"
   },
   {
     "name": "article-slug",
     "path": "/article/:slug?",
-    "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/article/_slug.vue",
-    "chunkName": "pages/article/_slug"
+    "component": "/Volumes/Extreme SSD/Websites/PCW/pcw-webapp/pages/article/_slug.vue",
+    "chunkName": "pages/article/_slug",
+    "_name": "_f112c04e"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/harry/My_Documents/Websites/PCW/pcw-webapp/pages/index.vue",
-    "chunkName": "pages/index"
+    "component": "/Volumes/Extreme SSD/Websites/PCW/pcw-webapp/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_4b050a0c"
   }
 ]

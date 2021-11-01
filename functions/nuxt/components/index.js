@@ -1,11 +1,11 @@
 import { wrapFunctional } from './utils'
 
 export { default as Logo } from '../../components/Logo.vue'
-export { default as AppFoot } from '../../components/App/foot.vue'
-export { default as AppHead } from '../../components/App/head.vue'
 export { default as AdminAddPost } from '../../components/Admin/addPost.vue'
 export { default as AdminAddService } from '../../components/Admin/addService.vue'
 export { default as AdminEditPosts } from '../../components/Admin/editPosts.vue'
+export { default as AppFoot } from '../../components/App/foot.vue'
+export { default as AppHead } from '../../components/App/head.vue'
 export { default as CareersHead } from '../../components/Careers/head.vue'
 export { default as CareersMid } from '../../components/Careers/mid.vue'
 export { default as CarouselAbout } from '../../components/Carousel/about.vue'
@@ -51,11 +51,11 @@ export { default as UiMessage } from '../../components/Ui/message.vue'
 export { default as UiMoreBtn } from '../../components/Ui/moreBtn.vue'
 
 export const LazyLogo = import('../../components/Logo.vue' /* webpackChunkName: "components/logo" */).then(c => wrapFunctional(c.default || c))
-export const LazyAppFoot = import('../../components/App/foot.vue' /* webpackChunkName: "components/app-foot" */).then(c => wrapFunctional(c.default || c))
-export const LazyAppHead = import('../../components/App/head.vue' /* webpackChunkName: "components/app-head" */).then(c => wrapFunctional(c.default || c))
 export const LazyAdminAddPost = import('../../components/Admin/addPost.vue' /* webpackChunkName: "components/admin-add-post" */).then(c => wrapFunctional(c.default || c))
 export const LazyAdminAddService = import('../../components/Admin/addService.vue' /* webpackChunkName: "components/admin-add-service" */).then(c => wrapFunctional(c.default || c))
 export const LazyAdminEditPosts = import('../../components/Admin/editPosts.vue' /* webpackChunkName: "components/admin-edit-posts" */).then(c => wrapFunctional(c.default || c))
+export const LazyAppFoot = import('../../components/App/foot.vue' /* webpackChunkName: "components/app-foot" */).then(c => wrapFunctional(c.default || c))
+export const LazyAppHead = import('../../components/App/head.vue' /* webpackChunkName: "components/app-head" */).then(c => wrapFunctional(c.default || c))
 export const LazyCareersHead = import('../../components/Careers/head.vue' /* webpackChunkName: "components/careers-head" */).then(c => wrapFunctional(c.default || c))
 export const LazyCareersMid = import('../../components/Careers/mid.vue' /* webpackChunkName: "components/careers-mid" */).then(c => wrapFunctional(c.default || c))
 export const LazyCarouselAbout = import('../../components/Carousel/about.vue' /* webpackChunkName: "components/carousel-about" */).then(c => wrapFunctional(c.default || c))

@@ -7,11 +7,11 @@ You can directly use them in pages and other components without the need to impo
 **Tip:** If a component is conditionally rendered with `v-if` and is big, it is better to use `Lazy` or `lazy-` prefix to lazy load.
 
 - `<Logo>` | `<logo>` (components/Logo.vue)
-- `<AppFoot>` | `<app-foot>` (components/App/foot.vue)
-- `<AppHead>` | `<app-head>` (components/App/head.vue)
 - `<AdminAddPost>` | `<admin-add-post>` (components/Admin/addPost.vue)
 - `<AdminAddService>` | `<admin-add-service>` (components/Admin/addService.vue)
 - `<AdminEditPosts>` | `<admin-edit-posts>` (components/Admin/editPosts.vue)
+- `<AppFoot>` | `<app-foot>` (components/App/foot.vue)
+- `<AppHead>` | `<app-head>` (components/App/head.vue)
 - `<CareersHead>` | `<careers-head>` (components/Careers/head.vue)
 - `<CareersMid>` | `<careers-mid>` (components/Careers/mid.vue)
 - `<CarouselAbout>` | `<carousel-about>` (components/Carousel/about.vue)

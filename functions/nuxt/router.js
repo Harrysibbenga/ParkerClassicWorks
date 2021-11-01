@@ -4,23 +4,23 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _c11c5b6c = () => interopDefault(import('../pages/admin.vue' /* webpackChunkName: "pages/admin" */))
-const _2b5e8edc = () => interopDefault(import('../pages/admin/articles.vue' /* webpackChunkName: "pages/admin/articles" */))
-const _a5463a20 = () => interopDefault(import('../pages/admin/careers.vue' /* webpackChunkName: "pages/admin/careers" */))
-const _1746fe33 = () => interopDefault(import('../pages/admin/services.vue' /* webpackChunkName: "pages/admin/services" */))
-const _0288b673 = () => interopDefault(import('../pages/akrapovic.vue' /* webpackChunkName: "pages/akrapovic" */))
-const _96a7b020 = () => interopDefault(import('../pages/careers.vue' /* webpackChunkName: "pages/careers" */))
-const _3906eff4 = () => interopDefault(import('../pages/caterham.vue' /* webpackChunkName: "pages/caterham" */))
-const _45835328 = () => interopDefault(import('../pages/detailing.vue' /* webpackChunkName: "pages/detailing" */))
-const _44477a56 = () => interopDefault(import('../pages/hre.vue' /* webpackChunkName: "pages/hre" */))
-const _37aa2164 = () => interopDefault(import('../pages/login.vue' /* webpackChunkName: "pages/login" */))
-const _26a0b7a8 = () => interopDefault(import('../pages/news.vue' /* webpackChunkName: "pages/news" */))
-const _f13ee172 = () => interopDefault(import('../pages/policy.vue' /* webpackChunkName: "pages/policy" */))
-const _5a08ac4a = () => interopDefault(import('../pages/porsche.vue' /* webpackChunkName: "pages/porsche" */))
-const _aa8a2178 = () => interopDefault(import('../pages/sonax.vue' /* webpackChunkName: "pages/sonax" */))
-const _350f6898 = () => interopDefault(import('../pages/trackstar.vue' /* webpackChunkName: "pages/trackstar" */))
-const _b50ebfa8 = () => interopDefault(import('../pages/article/_slug.vue' /* webpackChunkName: "pages/article/_slug" */))
-const _6e027e4d = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _0beccef7 = () => interopDefault(import('../pages/admin.vue' /* webpackChunkName: "pages/admin" */))
+const _4812ae85 = () => interopDefault(import('../pages/admin/articles.vue' /* webpackChunkName: "pages/admin/articles" */))
+const _e14a3ac6 = () => interopDefault(import('../pages/admin/careers.vue' /* webpackChunkName: "pages/admin/careers" */))
+const _7508f426 = () => interopDefault(import('../pages/admin/services.vue' /* webpackChunkName: "pages/admin/services" */))
+const _eaa8d6c0 = () => interopDefault(import('../pages/akrapovic.vue' /* webpackChunkName: "pages/akrapovic" */))
+const _234aa546 = () => interopDefault(import('../pages/careers.vue' /* webpackChunkName: "pages/careers" */))
+const _40c29f8e = () => interopDefault(import('../pages/caterham.vue' /* webpackChunkName: "pages/caterham" */))
+const _65613499 = () => interopDefault(import('../pages/detailing.vue' /* webpackChunkName: "pages/detailing" */))
+const _5ec3be43 = () => interopDefault(import('../pages/hre.vue' /* webpackChunkName: "pages/hre" */))
+const _b7b5c3de = () => interopDefault(import('../pages/login.vue' /* webpackChunkName: "pages/login" */))
+const _5bacf15b = () => interopDefault(import('../pages/news.vue' /* webpackChunkName: "pages/news" */))
+const _ab75af8c = () => interopDefault(import('../pages/policy.vue' /* webpackChunkName: "pages/policy" */))
+const _0caa2f48 = () => interopDefault(import('../pages/porsche.vue' /* webpackChunkName: "pages/porsche" */))
+const _1735ebf1 = () => interopDefault(import('../pages/sonax.vue' /* webpackChunkName: "pages/sonax" */))
+const _859b7276 = () => interopDefault(import('../pages/trackstar.vue' /* webpackChunkName: "pages/trackstar" */))
+const _f112c04e = () => interopDefault(import('../pages/article/_slug.vue' /* webpackChunkName: "pages/article/_slug" */))
+const _4b050a0c = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -35,72 +35,72 @@ export const routerOptions = {
 
   routes: [{
     path: "/admin",
-    component: _c11c5b6c,
+    component: _0beccef7,
     name: "admin",
     children: [{
       path: "articles",
-      component: _2b5e8edc,
+      component: _4812ae85,
       name: "admin-articles"
     }, {
       path: "careers",
-      component: _a5463a20,
+      component: _e14a3ac6,
       name: "admin-careers"
     }, {
       path: "services",
-      component: _1746fe33,
+      component: _7508f426,
       name: "admin-services"
     }]
   }, {
     path: "/akrapovic",
-    component: _0288b673,
+    component: _eaa8d6c0,
     name: "akrapovic"
   }, {
     path: "/careers",
-    component: _96a7b020,
+    component: _234aa546,
     name: "careers"
   }, {
     path: "/caterham",
-    component: _3906eff4,
+    component: _40c29f8e,
     name: "caterham"
   }, {
     path: "/detailing",
-    component: _45835328,
+    component: _65613499,
     name: "detailing"
   }, {
     path: "/hre",
-    component: _44477a56,
+    component: _5ec3be43,
     name: "hre"
   }, {
     path: "/login",
-    component: _37aa2164,
+    component: _b7b5c3de,
     name: "login"
   }, {
     path: "/news",
-    component: _26a0b7a8,
+    component: _5bacf15b,
     name: "news"
   }, {
     path: "/policy",
-    component: _f13ee172,
+    component: _ab75af8c,
     name: "policy"
   }, {
     path: "/porsche",
-    component: _5a08ac4a,
+    component: _0caa2f48,
     name: "porsche"
   }, {
     path: "/sonax",
-    component: _aa8a2178,
+    component: _1735ebf1,
     name: "sonax"
   }, {
     path: "/trackstar",
-    component: _350f6898,
+    component: _859b7276,
     name: "trackstar"
   }, {
     path: "/article/:slug?",
-    component: _b50ebfa8,
+    component: _f112c04e,
     name: "article-slug"
   }, {
     path: "/",
-    component: _6e027e4d,
+    component: _4b050a0c,
     name: "index"
   }],
 
